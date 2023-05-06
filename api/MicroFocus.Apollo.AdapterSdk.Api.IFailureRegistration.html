@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IFailureRegistration
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IFailureRegistration
+   ">
+    <meta name="generator" content="docfx 2.59.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MicroFocus.Apollo.AdapterSdk.Api.IFailureRegistration">
+  
+  
+  <h1 id="MicroFocus_Apollo_AdapterSdk_Api_IFailureRegistration" data-uid="MicroFocus.Apollo.AdapterSdk.Api.IFailureRegistration" class="text-break">Interface IFailureRegistration
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a results handler that can register a failure.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="MicroFocus.Apollo.AdapterSdk.Api.html">MicroFocus.Apollo.AdapterSdk.Api</a></h6>
+  <h6><strong>Assembly</strong>: MicroFocus.Apollo.AdapterSdk.Api.dll</h6>
+  <h5 id="MicroFocus_Apollo_AdapterSdk_Api_IFailureRegistration_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IFailureRegistration</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MicroFocus_Apollo_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_" data-uid="MicroFocus.Apollo.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync*"></a>
+  <h4 id="MicroFocus_Apollo_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_MicroFocus_Apollo_AdapterSdk_Api_IFailureDetails_CancellationToken_" data-uid="MicroFocus.Apollo.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync(MicroFocus.Apollo.AdapterSdk.Api.IFailureDetails,CancellationToken)">RegisterFailureAsync(IFailureDetails, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Registers the failure not related to a specific file or location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask RegisterFailureAsync(IFailureDetails failureDetails, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MicroFocus.Apollo.AdapterSdk.Api.IFailureDetails.html">IFailureDetails</a></td>
+        <td><span class="parametername">failureDetails</span></td>
+        <td><p>The failure details.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The task cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ValueTask</span></td>
+        <td><p><code>ValueTask</code> representing the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MicroFocus_Apollo_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_MicroFocus_Apollo_AdapterSdk_Api_IFailureDetails_CancellationToken__examples">Examples</h5>
+  <p>The example below demonstrates how to register a failure that is not specific to any location.
+In this case, the operation has failed before any processing occurred.</p>
+<pre><code>public async Task RetrieveFilesDataAsync(RetrieveFilesDataRequest request, IFileDataResultsHandler handler, CancellationToken cancellationToken)
+{
+    var userName = request.RepositoryProperties.RepositoryOptions[&quot;UserName&quot;].ToString();
+    var password = request.RepositoryProperties.RepositoryOptions[&quot;Password&quot;].ToString();
+    try
+    {
+        // Log into the repository service and obtain an authentication token...
+        // This operation can fail with an exception
+        var serviceToken = LogIn(userName, password);
+        // Do further processing of the request....
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, &quot;Failed to log into the repository&quot;);
+        // Register a failure that is not specific to a file or a location - we were not able to process any file yet.
+        // Exceptions message is automatically added to the reported failure.
+        handler.RegisterFailure(new FailureDetails($&quot;Failed to log in {userName} to the repository&quot;, ex), cancellationToken);
+    }
+}</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MicroFocus.Apollo.AdapterSdk.Api.AbortRequestedException.html">AbortRequestedException</a></td>
+        <td><p>Processing of the current operation should be aborted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="MicroFocus_Apollo_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_" data-uid="MicroFocus.Apollo.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync*"></a>
+  <h4 id="MicroFocus_Apollo_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_System_String_MicroFocus_Apollo_AdapterSdk_Api_IFailureDetails_CancellationToken_" data-uid="MicroFocus.Apollo.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync(System.String,MicroFocus.Apollo.AdapterSdk.Api.IFailureDetails,CancellationToken)">RegisterFailureAsync(String, IFailureDetails, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Registers a failure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask RegisterFailureAsync(string fileLocation, IFailureDetails failureDetails, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileLocation</span></td>
+        <td><p>A full location or identifier of a file in the repository.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="MicroFocus.Apollo.AdapterSdk.Api.IFailureDetails.html">IFailureDetails</a></td>
+        <td><span class="parametername">failureDetails</span></td>
+        <td><p>Failure details.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The task cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ValueTask</span></td>
+        <td><p><code>ValueTask</code> representing the asynchronous operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="MicroFocus_Apollo_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_System_String_MicroFocus_Apollo_AdapterSdk_Api_IFailureDetails_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Registers a failure for a specific file or a repository location.</p>
+</div>
+  <h5 id="MicroFocus_Apollo_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_System_String_MicroFocus_Apollo_AdapterSdk_Api_IFailureDetails_CancellationToken__examples">Examples</h5>
+  <p>In the example of the <code>RegisterFailure</code> method usage below, the construction of <code>FileInfo</code>
+and opening of the file stream (<code>OpenRead</code>) can cause an exception to be thrown.
+Those failures should be handled by the adapter and reported back to Fusion using <code>RegisterFailure</code> method.</p>
+<pre><code>public async Task RetrieveFilesDataAsync(RetrieveFilesDataRequest request, IFileDataResultsHandler handler, CancellationToken cancellationToken)
+{
+foreach (var repositoryFile in request.Files)
+{
+    try
+    {
+        // Both of those operations can fail
+        var file = new FileInfo(repositoryFile.Metadata.FileLocation);
+        var fileStream = file.OpenRead();
+        // processing and queueing contents...
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, &quot;Failed to obtain file contents for {FileLocation}&quot;, repositoryFile.Metadata.FileLocation);
+        // Register a failure for the current file. Exceptions message is automatically added to the reported failure.
+        handler.RegisterFailure(repositoryFile.Metadata.FileLocation,
+                                new FailureDetails($&quot;Failed to obtain file contents&quot;, ex),
+                                cancellationToken);
+    }
+}
+}</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="MicroFocus.Apollo.AdapterSdk.Api.AbortRequestedException.html">AbortRequestedException</a></td>
+        <td><p>Processing of the current operation should be aborted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,502 @@
+{
+  "homepages": [],
+  "source_base_path": "/wd/src/MicroFocus.Apollo.AdapterSdk.Api",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "TwoA1e1ZIOHbtD1oPPvmAB+yNDpoA/SM5atYfGvoD9I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.AbortRequestedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.AbortRequestedException.html",
+          "hash": "9gDYG5z8kqeFBEU/KuosBWkHIHK6HKjTQn+gKVRjDYo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.AdapterDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.AdapterDescriptor.html",
+          "hash": "2EeC1yCf0dPRdUvPBkprILn6l8TN9QpLhHEqx9C7E/M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.FailureDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.FailureDetails.html",
+          "hash": "0YjEKzx4qBDvRWW2yIaVCIXBLoG9lE1P/rSuMPNSACM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.FileMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.FileMetadata.html",
+          "hash": "0p82lL+WfyIK3uCWcEWq5fh2djlfwI9V89oxx7WGGdE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.HandlerRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.HandlerRequest.html",
+          "hash": "BOvvfSE331TL7e31Efe4kkGbZIx3Hf0RPjKTgcTbt8Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IAdapterDescriptor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IAdapterDescriptor.html",
+          "hash": "hvSTVyxwwHLc4OcaGx2raPkUhN4m32nPaNevkOMAAFA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IConfigurationEncryption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IConfigurationEncryption.html",
+          "hash": "Y+xS48DaDRZfwgbk8FCNvjcUKoDYXJWHN+vDHp3fIHQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IDeleteResultHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IDeleteResultHandler.html",
+          "hash": "m1dCYLyIaMOsMGt/7A38jV97qCCHg7bhDFSs7omfWjs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IDeleteSupport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IDeleteSupport.html",
+          "hash": "0+R4Tve8bk8edMdYIbqBpmYTKmgqB0aG4+/LenB4AFg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IFailureDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IFailureDetails.html",
+          "hash": "66Luyd5ZsySIs5Kd6mMpDlPjq4jaouW8ymVKJcG9Sso="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IFailureRegistration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IFailureRegistration.html",
+          "hash": "cchj6mg0MiSo2tOrAt6UvmBYl4JwdQa6/cbC3l+/aS0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IFileDataResultsHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IFileDataResultsHandler.html",
+          "hash": "fldVIcJEhci7AT0SmpEaBuzxSPMzeclYxsHIV9YhGbU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IFileListResultsHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IFileListResultsHandler.html",
+          "hash": "kGJkdntpNz2W7Vz2JhnPV+o9SrZ9QLi4heIqh6nqHdY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IFileMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IFileMetadata.html",
+          "hash": "1/NWKQC7/+FIQiSwARwoWXMg6kMwWySHTCFJqa61EHY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IOptionsProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IOptionsProvider.html",
+          "hash": "mI+4z0n0mVHS+7/K6XTMKkeZQ2E/37EEaKCQilYzhnA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IProcessingEngine.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IProcessingEngine.html",
+          "hash": "aXGlHuCzVXoFpMHjawQ4M+I+8oeEu4C13XqgeWF3Sfw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IProcessingEngineFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IProcessingEngineFactory.html",
+          "hash": "a8n99aSkUwgy5GKUJfOW+/QJ00Sy3r+WE7GWy2Xyf/0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IRepositoryAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IRepositoryAdapter.html",
+          "hash": "Tt70Q0/1ndyozp77soLCsrTb9QpHY8m0snmWWL6cRMk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IRepositoryFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IRepositoryFile.html",
+          "hash": "JaC0lwe8E5l9VWwrq0m6bN8MQBA45zBeqzb8LJdTvVs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IRepositoryPartitionFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IRepositoryPartitionFile.html",
+          "hash": "x81qY4WsG6CMUCScNl4dloC9/PFCmZKzuad9Limaw58="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IRepositoryProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.IRepositoryProperties.html",
+          "hash": "VcWA2eKip3boQbKoCuYm6+64sbtH9YP+/LJ4ntiH314="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RepositoryConfigurationNames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RepositoryConfigurationNames.html",
+          "hash": "npW9NBJs+qHB+4h9Q8agaywKt+hcvBy7YQOSPzHh7jA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RepositoryFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RepositoryFile.html",
+          "hash": "ZBGkqEaoVjaIf2X0P1qN9rJImItAAV8QVycX3HpYtV4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RepositoryFilesRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RepositoryFilesRequest.html",
+          "hash": "1wXX0k/blRVpHFOCD/5JeDctlWVRUm4RXyFSbmY7Xj8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RepositoryOptionNames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RepositoryOptionNames.html",
+          "hash": "aOcvpbylNUhA/T/px5JhJg8eITuAf+9OCMaK9sFvV40="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RepositoryPartitionFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RepositoryPartitionFile.html",
+          "hash": "EaNE/7q/H/ROUp3zU8qcLaeL0mqpfAkuAS6imSlXm8I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RepositorySettingDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RepositorySettingDefinition.html",
+          "hash": "0MjdwudQF2TsNkJpMhZkWSRvPFHWn/WB8KL3EXBfqpE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RetrieveFileListRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.RetrieveFileListRequest.html",
+          "hash": "SD6D1mlCJQCpIQjWbRVduZvWrYHUzo3HG/otAimDUCY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MicroFocus.Apollo.AdapterSdk.Api.html",
+          "hash": "Jk7BwNqoJoX4ufQPg++USKU3Xdbt2gc/6I8Fb7AbImA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "dji5LTj3MiALCuLPylqYPgaDJO+8nE3M768dlvi/DZo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "mplkVyw2yZMNbWSxbXsedJpr8rmQwNYDyvltoariVVc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "3BvXrjpAvNrdg2rtypFG0a+7o+4vFd7zX2h7F52/rA8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo.svg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "styles/main.css",
+      "output": {
+        "resource": {
+          "relative_path": "styles/main.css"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "s+UecGKJLe11K3w4+MJjx6QoiqktkO8teeQG06lk8L0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 29,
+          "skipped_file_count": 29
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
