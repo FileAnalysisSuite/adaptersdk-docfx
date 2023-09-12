@@ -5,9 +5,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>OpenText Fusion Adapter SDK </title>
+    <title>Interface IRepositoryPartitionFile
+   </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="OpenText Fusion Adapter SDK ">
+    <meta name="title" content="Interface IRepositoryPartitionFile
+   ">
     <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -66,12 +68,70 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="opentext-fusion-adapter-sdk">OpenText Fusion Adapter SDK</h1>
-
-<p>OpenText Fusion analyses and manages content in various repositories, like file system or SharePoint. To do that, it needs an ability to interact with them.</p>
-<p>This is achieved through Repository (or Source) Adapters. These components respond to various commands received from the cloud server. Commands trigger specific operations such as retrieval of a list of files in a specific location or retrieval of file binary contents.</p>
-<p>This SDK provides an easy way to create custom Adapters.</p>
+            <article class="content wrap" id="_content" data-uid="OpenText.Fusion.AdapterSdk.Api.IRepositoryPartitionFile">
+  
+  
+  <h1 id="OpenText_Fusion_AdapterSdk_Api_IRepositoryPartitionFile" data-uid="OpenText.Fusion.AdapterSdk.Api.IRepositoryPartitionFile" class="text-break">Interface IRepositoryPartitionFile
+  </h1>
+  <div class="markdown level0 summary"><p>Repository File with Partition Hint.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.html#OpenText_Fusion_AdapterSdk_Api_IRepositoryFile_FileId">IRepositoryFile.FileId</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.html#OpenText_Fusion_AdapterSdk_Api_IRepositoryFile_Metadata">IRepositoryFile.Metadata</a>
+    </div>
+    <div>
+      <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.html#OpenText_Fusion_AdapterSdk_Api_IRepositoryFile_Contents">IRepositoryFile.Contents</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.html">OpenText.Fusion.AdapterSdk.Api</a></h6>
+  <h6><strong>Assembly</strong>: OpenText.Fusion.AdapterSdk.Api.dll</h6>
+  <h5 id="OpenText_Fusion_AdapterSdk_Api_IRepositoryPartitionFile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IRepositoryPartitionFile : IRepositoryFile</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="OpenText_Fusion_AdapterSdk_Api_IRepositoryPartitionFile_PartitionHint_" data-uid="OpenText.Fusion.AdapterSdk.Api.IRepositoryPartitionFile.PartitionHint*"></a>
+  <h4 id="OpenText_Fusion_AdapterSdk_Api_IRepositoryPartitionFile_PartitionHint" data-uid="OpenText.Fusion.AdapterSdk.Api.IRepositoryPartitionFile.PartitionHint">PartitionHint</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the partition hint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string PartitionHint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The partition hint.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenText_Fusion_AdapterSdk_Api_IRepositoryPartitionFile_PartitionHint_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+    PartitionHint is used to distribute work across adapters or threads. Files with different
+    partition hints can be distributed to separate adapters.
+</p>
+<p>
+    PartitionHint is only set during the file list retrieval (<a class="xref" href="OpenText.Fusion.AdapterSdk.Api.IRepositoryAdapter.html#OpenText_Fusion_AdapterSdk_Api_IRepositoryAdapter_RetrieveFileListAsync_OpenText_Fusion_AdapterSdk_Api_RetrieveFileListRequest_OpenText_Fusion_AdapterSdk_Api_IFileListResultsHandler_CancellationToken_">RetrieveFileListAsync(RetrieveFileListRequest, IFileListResultsHandler, CancellationToken)</a> method).
+</p>
+</div>
 </article>
           </div>
           

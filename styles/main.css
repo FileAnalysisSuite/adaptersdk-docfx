@@ -17,10 +17,61 @@
  * are licensed to the U.S. Government under vendor's standard commercial
  * license.
  */
-.navbar-inverse {
-    background-color: #0073e7;
-    border-color: #0073e7;
+#autocollapse .navbar-header {
+    margin-right: 20px;
 }
-.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text {
+
+svg:hover path {
+    fill: #101c2f;
+}
+
+header .navbar {
+    border-width: 0 0 0 0;
+}
+
+.navbar-inverse {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.navbar-default {
+    background-color: #0066ff;
+    border-color: #0066ff;
+}
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-text {
+    color: #101c2f;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #101c2f;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover::after,
+.navbar-inverse .navbar-nav > .active > a::after {
+    background-color: #06f;
+    border-radius: .5rem .5rem 0 0;
+    bottom: 0;
+    height: .5rem;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    border: 0;
+    margin-left: 0;
+    position: absolute;
+    top: auto;
+    transform: none;
+    transition: opacity .2s linear;
+    padding: .25em;
+    display: inline-block;
+    content: "";
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: #fff;
+    color: #101c2f;
+}
+
+.breadcrumb a {
     color: #fff;
 }
