@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RepositorySettingDefinition
+    <title>Interface IStoreSupport
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RepositorySettingDefinition
+    <meta name="title" content="Interface IStoreSupport
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -68,37 +68,36 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition">
+            <article class="content wrap" id="_content" data-uid="OpenText.Fusion.AdapterSdk.Api.IStoreSupport">
   
   
-  <h1 id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition" class="text-break">Class RepositorySettingDefinition
+  <h1 id="OpenText_Fusion_AdapterSdk_Api_IStoreSupport" data-uid="OpenText.Fusion.AdapterSdk.Api.IStoreSupport" class="text-break">Interface IStoreSupport
   </h1>
-  <div class="markdown level0 summary"><p>Definition of a repository setting in Fusion Custom Adapter.</p>
+  <div class="markdown level0 summary"><p>Store action support.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">RepositorySettingDefinition</span></div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.html">OpenText.Fusion.AdapterSdk.Api</a></h6>
   <h6><strong>Assembly</strong>: OpenText.Fusion.AdapterSdk.Api.dll</h6>
-  <h5 id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition_syntax">Syntax</h5>
+  <h5 id="OpenText_Fusion_AdapterSdk_Api_IStoreSupport_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RepositorySettingDefinition : object</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IStoreSupport</code></pre>
   </div>
-  <h3 id="constructors">Constructors
+  <h5 id="OpenText_Fusion_AdapterSdk_Api_IStoreSupport_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Implementation of <code>IStoreSupport</code> handles store action.</p>
+</div>
+  <h3 id="methods">Methods
   </h3>
   
   
-  <a id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition__ctor_" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.#ctor*"></a>
-  <h4 id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition__ctor_System_String_System_Boolean_" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.#ctor(System.String,System.Boolean)">RepositorySettingDefinition(String, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.html">RepositorySettingDefinition</a> class.</p>
+  <a id="OpenText_Fusion_AdapterSdk_Api_IStoreSupport_CreateStoreSupportProcessor_" data-uid="OpenText.Fusion.AdapterSdk.Api.IStoreSupport.CreateStoreSupportProcessor*"></a>
+  <h4 id="OpenText_Fusion_AdapterSdk_Api_IStoreSupport_CreateStoreSupportProcessor_OpenText_Fusion_AdapterSdk_Api_IStoreSupportRequest_CancellationToken_" data-uid="OpenText.Fusion.AdapterSdk.Api.IStoreSupport.CreateStoreSupportProcessor(OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest,CancellationToken)">CreateStoreSupportProcessor(IStoreSupportRequest, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Implementors of <code>IStoreSupport</code> create an instance of a <code>ICreateStoreSupportProcessor</code> that can store the
+content of files provided in the request in the target repository.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RepositorySettingDefinition(string name, bool isRequired)</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;IStoreSupportProcessor&gt; CreateStoreSupportProcessor(IStoreSupportRequest request, CancellationToken cancellationToken)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -111,33 +110,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>The setting name.</p>
+        <td><a class="xref" href="OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.html">IStoreSupportRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">isRequired</span></td>
-        <td><p>Is the setting value required.</p>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token that can be used by other objects or threads to receive notice of cancellation.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
-  </h3>
-  
-  
-  <a id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition_IsRequired_" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.IsRequired*"></a>
-  <h4 id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition_IsRequired" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.IsRequired">IsRequired</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether the value of this setting has to be provided.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsRequired { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -147,39 +133,20 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if it is required; otherwise, <code>false</code>.</p>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.html">IStoreSupportProcessor</a>&gt;</td>
+        <td><p>A Task representing the asynchronous operation.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition_Name_" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.Name*"></a>
-  <h4 id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition_Name" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.Name">Name</h4>
-  <div class="markdown level1 summary"><p>Gets the setting name.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The setting name.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="OpenText_Fusion_AdapterSdk_Api_IStoreSupport_CreateStoreSupportProcessor_OpenText_Fusion_AdapterSdk_Api_IStoreSupportRequest_CancellationToken__examples">Examples</h5>
+  <p>Here is an example of creating an <code>ICreateStoreSupportProcessor</code>.</p>
+<pre><code>public async Task CreateStoreSupportProcessor(IStoreSupportRequest request, CancellationToken cancellationToken)
+{
+  IStoreSupportProcessor processor = new CustomStoreSupportProcessor(request);
+  return Task.FromResult(processor);
+}</code></pre>
+
 </article>
           </div>
           

@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "UcfoRyGR4LU7DpPN5vBLtYthPSw/YymgLiMGuVsO/+4="
+          "hash": "//WsFzFbi89JqdiI1zI2R4xKjiYLAk4klcuyikw4P6w="
         }
       },
       "is_incremental": true,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.AbortRequestedException.html",
-          "hash": "5AuEj7rZfQ7lgLyG7/L16LyoNuLnDkeoIdk5QQQhAYM="
+          "hash": "cm3nrTtG7W3PH3Mfrmb8ZkYUzN22tBbecLtZEctYkyE="
         }
       },
       "is_incremental": true,
@@ -33,7 +33,31 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.html",
-          "hash": "qb3YKdGMvrfy5aqU9tivnmiTbhgCZrhUlectJGWopoI="
+          "hash": "uezyYTSFCBUOLUrgfz2oKAnUZR2NSLdPoMYhwq/gHaM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.html",
+          "hash": "XzMgVoQmjknuCj7oIf0uxLWJpSz6QLH2nCkkJ839DOk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.Failure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.Failure.html",
+          "hash": "MDlzj/yS4p1jDFH1BccNTsUn8SVHmkC+bM2sIcOwkOE="
         }
       },
       "is_incremental": true,
@@ -45,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.FailureDetails.html",
-          "hash": "mPZkg/Mb3b9FjsxI2qdaXm548ty90ENGnzWz19YTgqw="
+          "hash": "7Q6WWGiC1MmGl0tAzog78A8GoOLHFJjEhRzT10SkM8I="
         }
       },
       "is_incremental": true,
@@ -57,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.FileMetadata.html",
-          "hash": "LsN7EV38aQHJ2g4AuKW0SDbrvexzJRbLnzzdPkOurKU="
+          "hash": "KL7JJdhU2GlpWihR0VbteqXgZBTJxIotQ103qZVTiHY="
         }
       },
       "is_incremental": true,
@@ -69,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.HandlerRequest.html",
-          "hash": "qnnNhvUsVAOYPRuHX9w78n7x8wHJymVSOSiDQHwRTbg="
+          "hash": "lSbZHFPX1l2wK5juRKROscwkKaW/HSQqLJApdvL2OH8="
         }
       },
       "is_incremental": true,
@@ -81,7 +105,19 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.html",
-          "hash": "25+GGc1Np+Kpdyu6QkUEKiivfG/4PCGm9eheM5hpFeg="
+          "hash": "XYGG4g2Pw6aEK9Pez/ZSeZ4OFbNvVlG8p87BXNN1OGc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.html",
+          "hash": "Cy1wmCQkqs2onUNfIddcSlipI/c8pNtXIYJ4EhpHlbw="
         }
       },
       "is_incremental": true,
@@ -93,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IConfigurationEncryption.html",
-          "hash": "mcw8yxxpyq1oen9RStXwm++gV1dPeI4IKJegU/sPh/Y="
+          "hash": "8OYBoda2+d3A+vafoP3Q4+cxAxjtQInXCsOeU0fpXTc="
         }
       },
       "is_incremental": true,
@@ -105,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IDeleteResultHandler.html",
-          "hash": "U9S+RTsLOhRdCWO2aLAIDfopyR2L02UbO7KbWLSHrCE="
+          "hash": "HAzPbKDyRP/bg3oeGcdX3Na2eUcaKh2ICEHAdcT9AC8="
         }
       },
       "is_incremental": true,
@@ -117,7 +153,19 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IDeleteSupport.html",
-          "hash": "EUnUC6jSD2eixim46sS0m+kiukQkL3XNxRbo7jdeyNE="
+          "hash": "bb0xR4RcMXiC7BNsL9nZYBHZMAJ9Ef8A5f8KnPL1UAU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFailure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFailure.html",
+          "hash": "79wGpbDZzzsWeKTpHlDeu+7g7EvavCe/0IrMqbTmAkE="
         }
       },
       "is_incremental": true,
@@ -129,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFailureDetails.html",
-          "hash": "g8B7zYzFTeGGo7vtFN5wh/QQOIdh3J+XbvL4U34/AHg="
+          "hash": "o4O6UGaDqv8iGilu9fqD0U52s/LHg/bx39RwqOd0mzs="
         }
       },
       "is_incremental": true,
@@ -141,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.html",
-          "hash": "MH/QQfe1BoCayKssfXXIbC+KoIExnm2UfXq6fvpe3xo="
+          "hash": "a3kwc9FagNrCl8DF1BvNQQ/ljigGu0n4wB9UUv8unn4="
         }
       },
       "is_incremental": true,
@@ -153,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.html",
-          "hash": "H/9V/GnAOv0BGKNzgfXeXF0pm9HTnrSs24ieesky138="
+          "hash": "bLZiaJ/eER3GPQw6cLrMebjaR9vqOPNywLTWVkKCgiw="
         }
       },
       "is_incremental": true,
@@ -165,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFileListResultsHandler.html",
-          "hash": "5lAAVS0ro+dSgdwY+hJUP0pC+JjWSUjt6CoHUQ2g4lo="
+          "hash": "oNpG8EhMdHXl45w4rdSf2Tmm5fbc/Bxv5xmSmiXehtI="
         }
       },
       "is_incremental": true,
@@ -177,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFileMetadata.html",
-          "hash": "SmjJhlrYZNyHRyQjJLOaNDIsQyzLj1cgzWxh3mGyq/Q="
+          "hash": "pFMn/fVpeQiJbspNdUatDpwVJln26QqhIjOohS8tndE="
         }
       },
       "is_incremental": true,
@@ -189,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.html",
-          "hash": "gVVZKR0+gLkx+Nem2LUNESWiMDqDTIKYBVF0z8fvWWw="
+          "hash": "oDqSezzQttcerarIJ7Y5o+hRDOm/TO2aThUhD8XsAAE="
         }
       },
       "is_incremental": true,
@@ -201,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IProcessingEngine.html",
-          "hash": "/35QhA2jPfhNSih3oG+vSvGwt36KGwKehhL28GHLV8w="
+          "hash": "HpPiwkA+UMh4kOGAbECc2nT16QFpKmaMFFay1mCQml0="
         }
       },
       "is_incremental": true,
@@ -213,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IProcessingEngineFactory.html",
-          "hash": "xPQomNzZRE7GDR9nLX43T65jmv8Ho2/Iob/n/zzvdG0="
+          "hash": "UHHxOLAF6ahpUuVms0HTHlapDrrYEp6TG0YEAt2mmrw="
         }
       },
       "is_incremental": true,
@@ -225,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryAdapter.html",
-          "hash": "r21gFPpUhSsc8ovrQ6oXwo/0hEsnHULO6Vuyf4wGppQ="
+          "hash": "ET97gEzfNP9JLZTGj+KYldyK4IEDSbTQ1/iFzsGe980="
         }
       },
       "is_incremental": true,
@@ -237,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.html",
-          "hash": "3o18t/9RF0n/ByVo2mOWJBCaJnr2R/umfhw92puCLnw="
+          "hash": "eDy11HuLOVpDyoVuV4jrytrtvtwA3uL9oRT9ynQFJRE="
         }
       },
       "is_incremental": true,
@@ -249,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryPartitionFile.html",
-          "hash": "ht3nm0mcWa4djlyHpOAQY0c7NCqKARICul04vlxENQ0="
+          "hash": "TD06Ol6lzzUOy8N8vZmjTD5vOTEcrxjKItZC6vmUFvo="
         }
       },
       "is_incremental": true,
@@ -261,7 +309,55 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties.html",
-          "hash": "oL1/hFY02L+JuoqNc2/FfMI+EacnvMaLqRxwDQPX+k0="
+          "hash": "ylSZwDU9dp0pFkQvkCZu1Q3MuVi2R0UXixMFI5bMDgI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html",
+          "hash": "6Yt6lsTQXHv8WP6YmcmyRo5vHAu6oFCwHN2Eo5r6dkk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupport.html",
+          "hash": "glRlbHRSRoPyFC6IlyZcFzHvA3ExCfuvundTI8LdAyM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.html",
+          "hash": "cyM3ZIIwfQn2G8NJsR/4IDUnEoLiPVRaqK1bVEqI9F4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.html",
+          "hash": "WFPXct7Wa774dtaLjb38MO1smw/k+F5Xjn9zfXBNFjc="
         }
       },
       "is_incremental": true,
@@ -273,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryConfigurationNames.html",
-          "hash": "JA228pdN83g2mNm2GRVy9dMNxWy15F7NjEwWFvzC9do="
+          "hash": "sVWkgPdUWcAGPOJJBf9KuSROaPVomT2hwWmQMcObZRA="
         }
       },
       "is_incremental": true,
@@ -285,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryFile.html",
-          "hash": "iwPxXkH/OhC/SaQY+sqV/s37oscBm/K8POP5FPs+flc="
+          "hash": "PCCmZJxxxvLwvQ99NQyDyq3Bxq5BqS3SVazJEcakbfc="
         }
       },
       "is_incremental": true,
@@ -297,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryFilesRequest.html",
-          "hash": "7zFv0WSUpELI1Awct13e0hF1bkZtcp77YKceaIRsyFw="
+          "hash": "H8kLI2baDcHlXaVCpOjvQql96daYD+YvpaBGcPJvxa0="
         }
       },
       "is_incremental": true,
@@ -309,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.html",
-          "hash": "opfNBhHds+NGXOQ7l47mNlCPhGsDApDiTFEGDBvXNlg="
+          "hash": "I3Ru0ZiJLyKgxs3HiNR7752RyV/QX3MEluD2DSpZHmk="
         }
       },
       "is_incremental": true,
@@ -321,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryPartitionFile.html",
-          "hash": "+iFRkvWQ0NJdCUMy/ITQvGcJG1aDSMchdQX6f/bURhM="
+          "hash": "d/Hb/7q8jNknx496hqa930ByLLG1ebvkzfRKi77ZREM="
         }
       },
       "is_incremental": true,
@@ -333,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.html",
-          "hash": "OClhq/RkbgC+X4Sdvo6YroHDMDzavuWLUCzCJC5pKFE="
+          "hash": "X96qrBm8Y3m+PCajZPJVmXm3k3vhRih26z+D+H0/WvQ="
         }
       },
       "is_incremental": true,
@@ -345,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.html",
-          "hash": "+RfadMdElOwLevzroYu3Tr1QOxE0oCH2MV5PSSXxhQY="
+          "hash": "uIeiNawBkCfIIs1S1IjhR0e6IS8CNZedjlov7YadXqs="
         }
       },
       "is_incremental": true,
@@ -357,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.html",
-          "hash": "MIsUoyX9NrSyePJmThXZAbU7goK4pdgXmNox3KxOByM="
+          "hash": "4mkchXL5hEFNJLahhceUWvLRbBrgshA57pkTlCJ5ELI="
         }
       },
       "is_incremental": true,
@@ -369,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "FvPsllLtwebRN27PoIDS8TQIzhSx02lYHrfAstPp8Ks="
+          "hash": "4WMlHqo9IWTtnAagqbLvNJzqVciwitKKeOklXnie9tM="
         }
       },
       "is_incremental": true,
@@ -381,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Zrf7Yhei0BngMbH3nhw9xO3J7IyLAyXFrm3xaMEdp6w="
+          "hash": "Op1KgHzM6IhWOYlFwUXDrZmk2Xrwbqg420RiQssa2/A="
         }
       },
       "is_incremental": false,
@@ -404,7 +500,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "6b9bnuw6RjX3tdpgoWY92qvY7/3/owT/CsJOOmAHYWE="
+          "hash": "kck+lgmtAsyJMd1isDK5Mdap9VKsQ8qJUA3DkPb76Xc="
         }
       },
       "is_incremental": true,
@@ -463,8 +559,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 29,
-          "skipped_file_count": 29
+          "total_file_count": 37,
+          "skipped_file_count": 37
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

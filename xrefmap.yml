@@ -80,6 +80,99 @@ references:
   isSpec: "True"
   fullName: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.SettingDefinitions
   nameWithType: AdapterDescriptor.SettingDefinitions
+- uid: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest
+  name: ChangeLogRequest
+  href: api/OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.html
+  commentId: T:OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest
+  fullName: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest
+  nameWithType: ChangeLogRequest
+- uid: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.#ctor(System.Nullable{System.String},DateTime,OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties)
+  name: ChangeLogRequest(Nullable<String>, DateTime, IRepositoryProperties)
+  href: api/OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.html#OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest__ctor_System_Nullable_System_String__DateTime_OpenText_Fusion_AdapterSdk_Api_IRepositoryProperties_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.#ctor(System.Nullable{System.String},DateTime,OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties)
+  name.vb: ChangeLogRequest(Nullable(Of String), DateTime, IRepositoryProperties)
+  fullName: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.ChangeLogRequest(System.Nullable<System.String>, DateTime, OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties)
+  fullName.vb: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.ChangeLogRequest(System.Nullable(Of System.String), DateTime, OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties)
+  nameWithType: ChangeLogRequest.ChangeLogRequest(Nullable<String>, DateTime, IRepositoryProperties)
+  nameWithType.vb: ChangeLogRequest.ChangeLogRequest(Nullable(Of String), DateTime, IRepositoryProperties)
+- uid: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.#ctor*
+  name: ChangeLogRequest
+  href: api/OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.html#OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest__ctor_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.#ctor
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.ChangeLogRequest
+  nameWithType: ChangeLogRequest.ChangeLogRequest
+- uid: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.AdditionalFilter
+  name: AdditionalFilter
+  href: api/OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.html#OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_AdditionalFilter
+  commentId: P:OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.AdditionalFilter
+  fullName: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.AdditionalFilter
+  nameWithType: ChangeLogRequest.AdditionalFilter
+- uid: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.AdditionalFilter*
+  name: AdditionalFilter
+  href: api/OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.html#OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_AdditionalFilter_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.AdditionalFilter
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.AdditionalFilter
+  nameWithType: ChangeLogRequest.AdditionalFilter
+- uid: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.LastProcessedDate
+  name: LastProcessedDate
+  href: api/OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.html#OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_LastProcessedDate
+  commentId: P:OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.LastProcessedDate
+  fullName: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.LastProcessedDate
+  nameWithType: ChangeLogRequest.LastProcessedDate
+- uid: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.LastProcessedDate*
+  name: LastProcessedDate
+  href: api/OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.html#OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_LastProcessedDate_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.LastProcessedDate
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.LastProcessedDate
+  nameWithType: ChangeLogRequest.LastProcessedDate
+- uid: OpenText.Fusion.AdapterSdk.Api.Failure
+  name: Failure
+  href: api/OpenText.Fusion.AdapterSdk.Api.Failure.html
+  commentId: T:OpenText.Fusion.AdapterSdk.Api.Failure
+  fullName: OpenText.Fusion.AdapterSdk.Api.Failure
+  nameWithType: Failure
+- uid: OpenText.Fusion.AdapterSdk.Api.Failure.#ctor(System.String,System.String)
+  name: Failure(String, String)
+  href: api/OpenText.Fusion.AdapterSdk.Api.Failure.html#OpenText_Fusion_AdapterSdk_Api_Failure__ctor_System_String_System_String_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.Failure.#ctor(System.String,System.String)
+  fullName: OpenText.Fusion.AdapterSdk.Api.Failure.Failure(System.String, System.String)
+  nameWithType: Failure.Failure(String, String)
+- uid: OpenText.Fusion.AdapterSdk.Api.Failure.#ctor*
+  name: Failure
+  href: api/OpenText.Fusion.AdapterSdk.Api.Failure.html#OpenText_Fusion_AdapterSdk_Api_Failure__ctor_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.Failure.#ctor
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.Failure.Failure
+  nameWithType: Failure.Failure
+- uid: OpenText.Fusion.AdapterSdk.Api.Failure.Id
+  name: Id
+  href: api/OpenText.Fusion.AdapterSdk.Api.Failure.html#OpenText_Fusion_AdapterSdk_Api_Failure_Id
+  commentId: P:OpenText.Fusion.AdapterSdk.Api.Failure.Id
+  fullName: OpenText.Fusion.AdapterSdk.Api.Failure.Id
+  nameWithType: Failure.Id
+- uid: OpenText.Fusion.AdapterSdk.Api.Failure.Id*
+  name: Id
+  href: api/OpenText.Fusion.AdapterSdk.Api.Failure.html#OpenText_Fusion_AdapterSdk_Api_Failure_Id_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.Failure.Id
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.Failure.Id
+  nameWithType: Failure.Id
+- uid: OpenText.Fusion.AdapterSdk.Api.Failure.Message
+  name: Message
+  href: api/OpenText.Fusion.AdapterSdk.Api.Failure.html#OpenText_Fusion_AdapterSdk_Api_Failure_Message
+  commentId: P:OpenText.Fusion.AdapterSdk.Api.Failure.Message
+  fullName: OpenText.Fusion.AdapterSdk.Api.Failure.Message
+  nameWithType: Failure.Message
+- uid: OpenText.Fusion.AdapterSdk.Api.Failure.Message*
+  name: Message
+  href: api/OpenText.Fusion.AdapterSdk.Api.Failure.html#OpenText_Fusion_AdapterSdk_Api_Failure_Message_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.Failure.Message
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.Failure.Message
+  nameWithType: Failure.Message
 - uid: OpenText.Fusion.AdapterSdk.Api.FailureDetails
   name: FailureDetails
   href: api/OpenText.Fusion.AdapterSdk.Api.FailureDetails.html
@@ -350,6 +443,25 @@ references:
   isSpec: "True"
   fullName: OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.SettingDefinitions
   nameWithType: IAdapterDescriptor.SettingDefinitions
+- uid: OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport
+  name: IChangeLogSupport
+  href: api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.html
+  commentId: T:OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport
+  fullName: OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport
+  nameWithType: IChangeLogSupport
+- uid: OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.RetrieveChangeLogAsync(OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest,OpenText.Fusion.AdapterSdk.Api.IFileListResultsHandler,CancellationToken)
+  name: RetrieveChangeLogAsync(ChangeLogRequest, IFileListResultsHandler, CancellationToken)
+  href: api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.html#OpenText_Fusion_AdapterSdk_Api_IChangeLogSupport_RetrieveChangeLogAsync_OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_OpenText_Fusion_AdapterSdk_Api_IFileListResultsHandler_CancellationToken_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.RetrieveChangeLogAsync(OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest,OpenText.Fusion.AdapterSdk.Api.IFileListResultsHandler,CancellationToken)
+  fullName: OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.RetrieveChangeLogAsync(OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest, OpenText.Fusion.AdapterSdk.Api.IFileListResultsHandler, CancellationToken)
+  nameWithType: IChangeLogSupport.RetrieveChangeLogAsync(ChangeLogRequest, IFileListResultsHandler, CancellationToken)
+- uid: OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.RetrieveChangeLogAsync*
+  name: RetrieveChangeLogAsync
+  href: api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.html#OpenText_Fusion_AdapterSdk_Api_IChangeLogSupport_RetrieveChangeLogAsync_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.RetrieveChangeLogAsync
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.RetrieveChangeLogAsync
+  nameWithType: IChangeLogSupport.RetrieveChangeLogAsync
 - uid: OpenText.Fusion.AdapterSdk.Api.IConfigurationEncryption
   name: IConfigurationEncryption
   href: api/OpenText.Fusion.AdapterSdk.Api.IConfigurationEncryption.html
@@ -407,6 +519,38 @@ references:
   isSpec: "True"
   fullName: OpenText.Fusion.AdapterSdk.Api.IDeleteSupport.DeleteFilesAsync
   nameWithType: IDeleteSupport.DeleteFilesAsync
+- uid: OpenText.Fusion.AdapterSdk.Api.IFailure
+  name: IFailure
+  href: api/OpenText.Fusion.AdapterSdk.Api.IFailure.html
+  commentId: T:OpenText.Fusion.AdapterSdk.Api.IFailure
+  fullName: OpenText.Fusion.AdapterSdk.Api.IFailure
+  nameWithType: IFailure
+- uid: OpenText.Fusion.AdapterSdk.Api.IFailure.Id
+  name: Id
+  href: api/OpenText.Fusion.AdapterSdk.Api.IFailure.html#OpenText_Fusion_AdapterSdk_Api_IFailure_Id
+  commentId: P:OpenText.Fusion.AdapterSdk.Api.IFailure.Id
+  fullName: OpenText.Fusion.AdapterSdk.Api.IFailure.Id
+  nameWithType: IFailure.Id
+- uid: OpenText.Fusion.AdapterSdk.Api.IFailure.Id*
+  name: Id
+  href: api/OpenText.Fusion.AdapterSdk.Api.IFailure.html#OpenText_Fusion_AdapterSdk_Api_IFailure_Id_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IFailure.Id
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IFailure.Id
+  nameWithType: IFailure.Id
+- uid: OpenText.Fusion.AdapterSdk.Api.IFailure.Message
+  name: Message
+  href: api/OpenText.Fusion.AdapterSdk.Api.IFailure.html#OpenText_Fusion_AdapterSdk_Api_IFailure_Message
+  commentId: P:OpenText.Fusion.AdapterSdk.Api.IFailure.Message
+  fullName: OpenText.Fusion.AdapterSdk.Api.IFailure.Message
+  nameWithType: IFailure.Message
+- uid: OpenText.Fusion.AdapterSdk.Api.IFailure.Message*
+  name: Message
+  href: api/OpenText.Fusion.AdapterSdk.Api.IFailure.html#OpenText_Fusion_AdapterSdk_Api_IFailure_Message_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IFailure.Message
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IFailure.Message
+  nameWithType: IFailure.Message
 - uid: OpenText.Fusion.AdapterSdk.Api.IFailureDetails
   name: IFailureDetails
   href: api/OpenText.Fusion.AdapterSdk.Api.IFailureDetails.html
@@ -451,12 +595,15 @@ references:
   commentId: M:OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync(OpenText.Fusion.AdapterSdk.Api.IFailureDetails,CancellationToken)
   fullName: OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync(OpenText.Fusion.AdapterSdk.Api.IFailureDetails, CancellationToken)
   nameWithType: IFailureRegistration.RegisterFailureAsync(IFailureDetails, CancellationToken)
-- uid: OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync(System.String,OpenText.Fusion.AdapterSdk.Api.IFailureDetails,CancellationToken)
-  name: RegisterFailureAsync(String, IFailureDetails, CancellationToken)
-  href: api/OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.html#OpenText_Fusion_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_System_String_OpenText_Fusion_AdapterSdk_Api_IFailureDetails_CancellationToken_
-  commentId: M:OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync(System.String,OpenText.Fusion.AdapterSdk.Api.IFailureDetails,CancellationToken)
-  fullName: OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync(System.String, OpenText.Fusion.AdapterSdk.Api.IFailureDetails, CancellationToken)
-  nameWithType: IFailureRegistration.RegisterFailureAsync(String, IFailureDetails, CancellationToken)
+- uid: OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync(System.Nullable{System.String},OpenText.Fusion.AdapterSdk.Api.IFailureDetails,CancellationToken)
+  name: RegisterFailureAsync(Nullable<String>, IFailureDetails, CancellationToken)
+  href: api/OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.html#OpenText_Fusion_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_System_Nullable_System_String__OpenText_Fusion_AdapterSdk_Api_IFailureDetails_CancellationToken_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync(System.Nullable{System.String},OpenText.Fusion.AdapterSdk.Api.IFailureDetails,CancellationToken)
+  name.vb: RegisterFailureAsync(Nullable(Of String), IFailureDetails, CancellationToken)
+  fullName: OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync(System.Nullable<System.String>, OpenText.Fusion.AdapterSdk.Api.IFailureDetails, CancellationToken)
+  fullName.vb: OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync(System.Nullable(Of System.String), OpenText.Fusion.AdapterSdk.Api.IFailureDetails, CancellationToken)
+  nameWithType: IFailureRegistration.RegisterFailureAsync(Nullable<String>, IFailureDetails, CancellationToken)
+  nameWithType.vb: IFailureRegistration.RegisterFailureAsync(Nullable(Of String), IFailureDetails, CancellationToken)
 - uid: OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync*
   name: RegisterFailureAsync
   href: api/OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.html#OpenText_Fusion_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_
@@ -479,6 +626,15 @@ references:
   fullName.vb: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync(System.String, Func(Of Stream), OpenText.Fusion.AdapterSdk.Api.IFileMetadata, CancellationToken)
   nameWithType: IFileDataResultsHandler.QueueFileAsync(String, Func<Stream>, IFileMetadata, CancellationToken)
   nameWithType.vb: IFileDataResultsHandler.QueueFileAsync(String, Func(Of Stream), IFileMetadata, CancellationToken)
+- uid: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync(System.String,Func{Stream},OpenText.Fusion.AdapterSdk.Api.IFileMetadata,IEnumerable{OpenText.Fusion.AdapterSdk.Api.IFailure},CancellationToken)
+  name: QueueFileAsync(String, Func<Stream>, IFileMetadata, IEnumerable<IFailure>, CancellationToken)
+  href: api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.html#OpenText_Fusion_AdapterSdk_Api_IFileDataResultsHandler_QueueFileAsync_System_String_Func_Stream__OpenText_Fusion_AdapterSdk_Api_IFileMetadata_IEnumerable_OpenText_Fusion_AdapterSdk_Api_IFailure__CancellationToken_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync(System.String,Func{Stream},OpenText.Fusion.AdapterSdk.Api.IFileMetadata,IEnumerable{OpenText.Fusion.AdapterSdk.Api.IFailure},CancellationToken)
+  name.vb: QueueFileAsync(String, Func(Of Stream), IFileMetadata, IEnumerable(Of IFailure), CancellationToken)
+  fullName: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync(System.String, Func<Stream>, OpenText.Fusion.AdapterSdk.Api.IFileMetadata, IEnumerable<OpenText.Fusion.AdapterSdk.Api.IFailure>, CancellationToken)
+  fullName.vb: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync(System.String, Func(Of Stream), OpenText.Fusion.AdapterSdk.Api.IFileMetadata, IEnumerable(Of OpenText.Fusion.AdapterSdk.Api.IFailure), CancellationToken)
+  nameWithType: IFileDataResultsHandler.QueueFileAsync(String, Func<Stream>, IFileMetadata, IEnumerable<IFailure>, CancellationToken)
+  nameWithType.vb: IFileDataResultsHandler.QueueFileAsync(String, Func(Of Stream), IFileMetadata, IEnumerable(Of IFailure), CancellationToken)
 - uid: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync*
   name: QueueFileAsync
   href: api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.html#OpenText_Fusion_AdapterSdk_Api_IFileDataResultsHandler_QueueFileAsync_
@@ -852,6 +1008,121 @@ references:
   isSpec: "True"
   fullName: OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties.RepositoryOptions
   nameWithType: IRepositoryProperties.RepositoryOptions
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreFile
+  name: IStoreFile
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html
+  commentId: T:OpenText.Fusion.AdapterSdk.Api.IStoreFile
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreFile
+  nameWithType: IStoreFile
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreFile.FileName
+  name: FileName
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html#OpenText_Fusion_AdapterSdk_Api_IStoreFile_FileName
+  commentId: P:OpenText.Fusion.AdapterSdk.Api.IStoreFile.FileName
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreFile.FileName
+  nameWithType: IStoreFile.FileName
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreFile.FileName*
+  name: FileName
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html#OpenText_Fusion_AdapterSdk_Api_IStoreFile_FileName_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IStoreFile.FileName
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreFile.FileName
+  nameWithType: IStoreFile.FileName
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreFile.Id
+  name: Id
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html#OpenText_Fusion_AdapterSdk_Api_IStoreFile_Id
+  commentId: P:OpenText.Fusion.AdapterSdk.Api.IStoreFile.Id
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreFile.Id
+  nameWithType: IStoreFile.Id
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreFile.Id*
+  name: Id
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html#OpenText_Fusion_AdapterSdk_Api_IStoreFile_Id_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IStoreFile.Id
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreFile.Id
+  nameWithType: IStoreFile.Id
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreFile.OpenInputStream
+  name: OpenInputStream()
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html#OpenText_Fusion_AdapterSdk_Api_IStoreFile_OpenInputStream
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.IStoreFile.OpenInputStream
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreFile.OpenInputStream()
+  nameWithType: IStoreFile.OpenInputStream()
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreFile.OpenInputStream*
+  name: OpenInputStream
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html#OpenText_Fusion_AdapterSdk_Api_IStoreFile_OpenInputStream_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IStoreFile.OpenInputStream
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreFile.OpenInputStream
+  nameWithType: IStoreFile.OpenInputStream
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreFile.Title
+  name: Title
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html#OpenText_Fusion_AdapterSdk_Api_IStoreFile_Title
+  commentId: P:OpenText.Fusion.AdapterSdk.Api.IStoreFile.Title
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreFile.Title
+  nameWithType: IStoreFile.Title
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreFile.Title*
+  name: Title
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html#OpenText_Fusion_AdapterSdk_Api_IStoreFile_Title_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IStoreFile.Title
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreFile.Title
+  nameWithType: IStoreFile.Title
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreSupport
+  name: IStoreSupport
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreSupport.html
+  commentId: T:OpenText.Fusion.AdapterSdk.Api.IStoreSupport
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreSupport
+  nameWithType: IStoreSupport
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreSupport.CreateStoreSupportProcessor(OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest,CancellationToken)
+  name: CreateStoreSupportProcessor(IStoreSupportRequest, CancellationToken)
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreSupport.html#OpenText_Fusion_AdapterSdk_Api_IStoreSupport_CreateStoreSupportProcessor_OpenText_Fusion_AdapterSdk_Api_IStoreSupportRequest_CancellationToken_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.IStoreSupport.CreateStoreSupportProcessor(OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest,CancellationToken)
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreSupport.CreateStoreSupportProcessor(OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest, CancellationToken)
+  nameWithType: IStoreSupport.CreateStoreSupportProcessor(IStoreSupportRequest, CancellationToken)
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreSupport.CreateStoreSupportProcessor*
+  name: CreateStoreSupportProcessor
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreSupport.html#OpenText_Fusion_AdapterSdk_Api_IStoreSupport_CreateStoreSupportProcessor_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IStoreSupport.CreateStoreSupportProcessor
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreSupport.CreateStoreSupportProcessor
+  nameWithType: IStoreSupport.CreateStoreSupportProcessor
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor
+  name: IStoreSupportProcessor
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.html
+  commentId: T:OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor
+  nameWithType: IStoreSupportProcessor
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.StoreFileAsync(OpenText.Fusion.AdapterSdk.Api.IStoreFile,CancellationToken)
+  name: StoreFileAsync(IStoreFile, CancellationToken)
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.html#OpenText_Fusion_AdapterSdk_Api_IStoreSupportProcessor_StoreFileAsync_OpenText_Fusion_AdapterSdk_Api_IStoreFile_CancellationToken_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.StoreFileAsync(OpenText.Fusion.AdapterSdk.Api.IStoreFile,CancellationToken)
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.StoreFileAsync(OpenText.Fusion.AdapterSdk.Api.IStoreFile, CancellationToken)
+  nameWithType: IStoreSupportProcessor.StoreFileAsync(IStoreFile, CancellationToken)
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.StoreFileAsync*
+  name: StoreFileAsync
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.html#OpenText_Fusion_AdapterSdk_Api_IStoreSupportProcessor_StoreFileAsync_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.StoreFileAsync
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.StoreFileAsync
+  nameWithType: IStoreSupportProcessor.StoreFileAsync
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest
+  name: IStoreSupportRequest
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.html
+  commentId: T:OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest
+  nameWithType: IStoreSupportRequest
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.DestinationOptions
+  name: DestinationOptions
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.html#OpenText_Fusion_AdapterSdk_Api_IStoreSupportRequest_DestinationOptions
+  commentId: P:OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.DestinationOptions
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.DestinationOptions
+  nameWithType: IStoreSupportRequest.DestinationOptions
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.DestinationOptions*
+  name: DestinationOptions
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.html#OpenText_Fusion_AdapterSdk_Api_IStoreSupportRequest_DestinationOptions_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.DestinationOptions
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.DestinationOptions
+  nameWithType: IStoreSupportRequest.DestinationOptions
 - uid: OpenText.Fusion.AdapterSdk.Api.RepositoryConfigurationNames
   name: RepositoryConfigurationNames
   href: api/OpenText.Fusion.AdapterSdk.Api.RepositoryConfigurationNames.html
@@ -1085,12 +1356,15 @@ references:
   commentId: T:OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest
   fullName: OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest
   nameWithType: RetrieveFileListRequest
-- uid: OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.#ctor(System.String,OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties)
-  name: RetrieveFileListRequest(String, IRepositoryProperties)
-  href: api/OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.html#OpenText_Fusion_AdapterSdk_Api_RetrieveFileListRequest__ctor_System_String_OpenText_Fusion_AdapterSdk_Api_IRepositoryProperties_
-  commentId: M:OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.#ctor(System.String,OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties)
-  fullName: OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.RetrieveFileListRequest(System.String, OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties)
-  nameWithType: RetrieveFileListRequest.RetrieveFileListRequest(String, IRepositoryProperties)
+- uid: OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.#ctor(System.Nullable{System.String},OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties)
+  name: RetrieveFileListRequest(Nullable<String>, IRepositoryProperties)
+  href: api/OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.html#OpenText_Fusion_AdapterSdk_Api_RetrieveFileListRequest__ctor_System_Nullable_System_String__OpenText_Fusion_AdapterSdk_Api_IRepositoryProperties_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.#ctor(System.Nullable{System.String},OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties)
+  name.vb: RetrieveFileListRequest(Nullable(Of String), IRepositoryProperties)
+  fullName: OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.RetrieveFileListRequest(System.Nullable<System.String>, OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties)
+  fullName.vb: OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.RetrieveFileListRequest(System.Nullable(Of System.String), OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties)
+  nameWithType: RetrieveFileListRequest.RetrieveFileListRequest(Nullable<String>, IRepositoryProperties)
+  nameWithType.vb: RetrieveFileListRequest.RetrieveFileListRequest(Nullable(Of String), IRepositoryProperties)
 - uid: OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.#ctor*
   name: RetrieveFileListRequest
   href: api/OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.html#OpenText_Fusion_AdapterSdk_Api_RetrieveFileListRequest__ctor_

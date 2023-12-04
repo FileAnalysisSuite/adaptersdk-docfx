@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IFileDataResultsHandler
    ">
-    <meta name="generator" content="docfx 2.59.3.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -79,7 +79,7 @@
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
-      <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.html#OpenText_Fusion_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_System_String_OpenText_Fusion_AdapterSdk_Api_IFailureDetails_CancellationToken_">IFailureRegistration.RegisterFailureAsync(String, IFailureDetails, CancellationToken)</a>
+      <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.html#OpenText_Fusion_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_System_Nullable_System_String__OpenText_Fusion_AdapterSdk_Api_IFailureDetails_CancellationToken_">IFailureRegistration.RegisterFailureAsync(Nullable&lt;String&gt;, IFailureDetails, CancellationToken)</a>
     </div>
     <div>
       <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.html#OpenText_Fusion_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_OpenText_Fusion_AdapterSdk_Api_IFailureDetails_CancellationToken_">IFailureRegistration.RegisterFailureAsync(IFailureDetails, CancellationToken)</a>
@@ -172,6 +172,110 @@ by Fusion.</p>
       var fileStream = file.OpenRead();
       repositoryFile.Metadata.AdditionalMetadata.Add(&quot;custom_property&quot;, 123);
       handler.QueueFileAsync(repositoryFile.FileId, new FileContents(fileStream), repositoryFile.Metadata);
+  }
+}</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="OpenText.Fusion.AdapterSdk.Api.AbortRequestedException.html">AbortRequestedException</a></td>
+        <td><p>Processing of the current operation should be aborted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="OpenText_Fusion_AdapterSdk_Api_IFileDataResultsHandler_QueueFileAsync_" data-uid="OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync*"></a>
+  <h4 id="OpenText_Fusion_AdapterSdk_Api_IFileDataResultsHandler_QueueFileAsync_System_String_Func_Stream__OpenText_Fusion_AdapterSdk_Api_IFileMetadata_IEnumerable_OpenText_Fusion_AdapterSdk_Api_IFailure__CancellationToken_" data-uid="OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync(System.String,Func{Stream},OpenText.Fusion.AdapterSdk.Api.IFileMetadata,IEnumerable{OpenText.Fusion.AdapterSdk.Api.IFailure},CancellationToken)">QueueFileAsync(String, Func&lt;Stream&gt;, IFileMetadata, IEnumerable&lt;IFailure&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Queues the contents, failures and metadata of an file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ValueTask QueueFileAsync(string fileId, Func&lt;Stream&gt; fileContents, IFileMetadata metadata, IEnumerable&lt;IFailure&gt; failures, CancellationToken cancellationToken = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileId</span></td>
+        <td><p>The file identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<span class="xref">Stream</span>&gt;</td>
+        <td><span class="parametername">fileContents</span></td>
+        <td><p>The file contents.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenText.Fusion.AdapterSdk.Api.IFileMetadata.html">IFileMetadata</a></td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>The metadata.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="OpenText.Fusion.AdapterSdk.Api.IFailure.html">IFailure</a>&gt;</td>
+        <td><span class="parametername">failures</span></td>
+        <td><p>The failures.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ValueTask</span></td>
+        <td><p>ValueTask.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenText_Fusion_AdapterSdk_Api_IFileDataResultsHandler_QueueFileAsync_System_String_Func_Stream__OpenText_Fusion_AdapterSdk_Api_IFileMetadata_IEnumerable_OpenText_Fusion_AdapterSdk_Api_IFailure__CancellationToken__examples">Examples</h5>
+  <p>Below is an example of the <code>RetrieveFilesDataAsync</code> method and the <code>handler.QueueFileAsync</code>.</p>
+<p>The <code data-dev-comment-type="paramref" class="paramref">fileId</code> parameter should be taken directly from a repository file being processed.</p>
+<p>Func&lt;Stream> used to pass the file contents.</p>
+<pre><code>public async Task RetrieveFilesDataAsync(RetrieveFilesDataRequest request, IFileDataResultsHandler handler, CancellationToken cancellationToken)
+{
+  foreach (var repositoryFile in request.Files)
+  {
+      var file = new FileInfo(repositoryFile.Metadata.FileLocation);
+      var fileStream = file.OpenRead();
+      repositoryFile.Metadata.AdditionalMetadata.Add(&quot;custom_property&quot;, 123);
+      var failureMessage = new FailureMessage(&quot;SDC_ERROR_CODE&quot;, $&quot;Failed to obtain file contents&quot;)
+      handler.QueueFileAsync(repositoryFile.FileId,
+                             new FileContents(fileStream),
+                             new List&lt;IFailureMessage> {failureMessage}
+                             repositoryFile.Metadata);,
   }
 }</code></pre>
 

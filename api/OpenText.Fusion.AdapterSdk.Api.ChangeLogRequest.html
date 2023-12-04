@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RepositorySettingDefinition
+    <title>Class ChangeLogRequest
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RepositorySettingDefinition
+    <meta name="title" content="Class ChangeLogRequest
    ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -68,37 +68,49 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition">
+            <article class="content wrap" id="_content" data-uid="OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest">
   
   
-  <h1 id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition" class="text-break">Class RepositorySettingDefinition
+  <h1 id="OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest" data-uid="OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest" class="text-break">Class ChangeLogRequest
   </h1>
-  <div class="markdown level0 summary"><p>Definition of a repository setting in Fusion Custom Adapter.</p>
+  <div class="markdown level0 summary"><p>Provides information required to run the RetrieveChangeLog command.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">RepositorySettingDefinition</span></div>
+    <div class="level1"><a class="xref" href="OpenText.Fusion.AdapterSdk.Api.HandlerRequest.html">HandlerRequest</a></div>
+    <div class="level2"><span class="xref">ChangeLogRequest</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.HandlerRequest.html#OpenText_Fusion_AdapterSdk_Api_HandlerRequest_RepositoryProperties">HandlerRequest.RepositoryProperties</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.html">OpenText.Fusion.AdapterSdk.Api</a></h6>
   <h6><strong>Assembly</strong>: OpenText.Fusion.AdapterSdk.Api.dll</h6>
-  <h5 id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition_syntax">Syntax</h5>
+  <h5 id="OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class RepositorySettingDefinition : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class ChangeLogRequest : HandlerRequest</code></pre>
   </div>
+  <h5 id="OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>File data retrieval is a part of the process of scanning repository.
+When the adapter receives that RetrieveChangeLog command (<a class="xref" href="OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.html#OpenText_Fusion_AdapterSdk_Api_IChangeLogSupport_RetrieveChangeLogAsync_OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_OpenText_Fusion_AdapterSdk_Api_IFileListResultsHandler_CancellationToken_">RetrieveChangeLogAsync(ChangeLogRequest, IFileListResultsHandler, CancellationToken)</a> method),
+it should return all files in particular repository that were changed since the last processed date.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition__ctor_" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.#ctor*"></a>
-  <h4 id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition__ctor_System_String_System_Boolean_" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.#ctor(System.String,System.Boolean)">RepositorySettingDefinition(String, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.html">RepositorySettingDefinition</a> class.</p>
+  <a id="OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest__ctor_" data-uid="OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.#ctor*"></a>
+  <h4 id="OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest__ctor_System_Nullable_System_String__DateTime_OpenText_Fusion_AdapterSdk_Api_IRepositoryProperties_" data-uid="OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.#ctor(System.Nullable{System.String},DateTime,OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties)">ChangeLogRequest(Nullable&lt;String&gt;, DateTime, IRepositoryProperties)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.html">ChangeLogRequest</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RepositorySettingDefinition(string name, bool isRequired)</code></pre>
+    <pre><code class="lang-csharp hljs">public ChangeLogRequest(string? additionalFilter, DateTime lastProcessedDate, IRepositoryProperties repositoryProperties)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -111,15 +123,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>The setting name.</p>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">additionalFilter</span></td>
+        <td><p>The additional filter.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">isRequired</span></td>
-        <td><p>Is the setting value required.</p>
+        <td><span class="xref">DateTime</span></td>
+        <td><span class="parametername">lastProcessedDate</span></td>
+        <td><p>The last processed date.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties.html">IRepositoryProperties</a></td>
+        <td><span class="parametername">repositoryProperties</span></td>
+        <td><p>The repository properties.</p>
 </td>
       </tr>
     </tbody>
@@ -128,14 +146,14 @@
   </h3>
   
   
-  <a id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition_IsRequired_" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.IsRequired*"></a>
-  <h4 id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition_IsRequired" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.IsRequired">IsRequired</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether the value of this setting has to be provided.</p>
+  <a id="OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_AdditionalFilter_" data-uid="OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.AdditionalFilter*"></a>
+  <h4 id="OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_AdditionalFilter" data-uid="OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.AdditionalFilter">AdditionalFilter</h4>
+  <div class="markdown level1 summary"><p>Gets the additional filter.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsRequired { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string? AdditionalFilter { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -147,22 +165,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><p><code>true</code> if it is required; otherwise, <code>false</code>.</p>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The additional filter.</p>
 </td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition_Name_" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.Name*"></a>
-  <h4 id="OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition_Name" data-uid="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.Name">Name</h4>
-  <div class="markdown level1 summary"><p>Gets the setting name.</p>
+  <a id="OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_LastProcessedDate_" data-uid="OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.LastProcessedDate*"></a>
+  <h4 id="OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_LastProcessedDate" data-uid="OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.LastProcessedDate">LastProcessedDate</h4>
+  <div class="markdown level1 summary"><p>Gets the last processed date.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public DateTime LastProcessedDate { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -174,12 +192,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><p>The setting name.</p>
+        <td><span class="xref">DateTime</span></td>
+        <td><p>The last processed date.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="OpenText.Fusion.AdapterSdk.Api.HandlerRequest.html">HandlerRequest</a></div>
+  </div>
 </article>
           </div>
           

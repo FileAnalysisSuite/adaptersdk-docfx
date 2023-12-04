@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IFailureRegistration
    ">
-    <meta name="generator" content="docfx 2.59.3.0">
+    <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -177,13 +177,13 @@ In this case, the operation has failed before any processing occurred.</p>
   
   
   <a id="OpenText_Fusion_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_" data-uid="OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync*"></a>
-  <h4 id="OpenText_Fusion_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_System_String_OpenText_Fusion_AdapterSdk_Api_IFailureDetails_CancellationToken_" data-uid="OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync(System.String,OpenText.Fusion.AdapterSdk.Api.IFailureDetails,CancellationToken)">RegisterFailureAsync(String, IFailureDetails, CancellationToken)</h4>
+  <h4 id="OpenText_Fusion_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_System_Nullable_System_String__OpenText_Fusion_AdapterSdk_Api_IFailureDetails_CancellationToken_" data-uid="OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.RegisterFailureAsync(System.Nullable{System.String},OpenText.Fusion.AdapterSdk.Api.IFailureDetails,CancellationToken)">RegisterFailureAsync(Nullable&lt;String&gt;, IFailureDetails, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Registers a failure.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">ValueTask RegisterFailureAsync(string fileLocation, IFailureDetails failureDetails, CancellationToken cancellationToken = null)</code></pre>
+    <pre><code class="lang-csharp hljs">ValueTask RegisterFailureAsync(string? fileLocation, IFailureDetails failureDetails, CancellationToken cancellationToken = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -196,7 +196,7 @@ In this case, the operation has failed before any processing occurred.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><span class="parametername">fileLocation</span></td>
         <td><p>A full location or identifier of a file in the repository.</p>
 </td>
@@ -231,10 +231,10 @@ In this case, the operation has failed before any processing occurred.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="OpenText_Fusion_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_System_String_OpenText_Fusion_AdapterSdk_Api_IFailureDetails_CancellationToken__remarks">Remarks</h5>
+  <h5 id="OpenText_Fusion_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_System_Nullable_System_String__OpenText_Fusion_AdapterSdk_Api_IFailureDetails_CancellationToken__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Registers a failure for a specific file or a repository location.</p>
 </div>
-  <h5 id="OpenText_Fusion_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_System_String_OpenText_Fusion_AdapterSdk_Api_IFailureDetails_CancellationToken__examples">Examples</h5>
+  <h5 id="OpenText_Fusion_AdapterSdk_Api_IFailureRegistration_RegisterFailureAsync_System_Nullable_System_String__OpenText_Fusion_AdapterSdk_Api_IFailureDetails_CancellationToken__examples">Examples</h5>
   <p>In the example of the <code>RegisterFailure</code> method usage below, the construction of <code>FileInfo</code>
 and opening of the file stream (<code>OpenRead</code>) can cause an exception to be thrown.
 Those failures should be handled by the adapter and reported back to Fusion using <code>RegisterFailure</code> method.</p>
