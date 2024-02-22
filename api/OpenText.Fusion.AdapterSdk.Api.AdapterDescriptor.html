@@ -99,13 +99,13 @@
   
   
   <a id="OpenText_Fusion_AdapterSdk_Api_AdapterDescriptor__ctor_" data-uid="OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.#ctor*"></a>
-  <h4 id="OpenText_Fusion_AdapterSdk_Api_AdapterDescriptor__ctor_System_String_IEnumerable_OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition__" data-uid="OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.#ctor(System.String,IEnumerable{OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition})">AdapterDescriptor(String, IEnumerable&lt;RepositorySettingDefinition&gt;)</h4>
+  <h4 id="OpenText_Fusion_AdapterSdk_Api_AdapterDescriptor__ctor_System_String_IEnumerable_OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition__System_Nullable_IEnumerable_System_String___" data-uid="OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.#ctor(System.String,IEnumerable{OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition},System.Nullable{IEnumerable{System.String}})">AdapterDescriptor(String, IEnumerable&lt;RepositorySettingDefinition&gt;, Nullable&lt;IEnumerable&lt;String&gt;&gt;)</h4>
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.html">AdapterDescriptor</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AdapterDescriptor(string adapterType, IEnumerable&lt;RepositorySettingDefinition&gt; propertyDefinitions)</code></pre>
+    <pre><code class="lang-csharp hljs">public AdapterDescriptor(string adapterType, IEnumerable&lt;RepositorySettingDefinition&gt; propertyDefinitions, IEnumerable&lt;string&gt;? additionalCapabilities = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -127,6 +127,12 @@
         <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.html">RepositorySettingDefinition</a>&gt;</td>
         <td><span class="parametername">propertyDefinitions</span></td>
         <td><p>The repository setting definitions required by the adapter.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><span class="parametername">additionalCapabilities</span></td>
+        <td><p>The additional capabilities of the adapter.</p>
 </td>
       </tr>
     </tbody>
@@ -163,6 +169,36 @@
   <h5 id="OpenText_Fusion_AdapterSdk_Api_AdapterDescriptor_AdapterType_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The adapter type is the type used when creating a custom adapter in Fusion.<br>
 It is not related to .NET type.</p>
+</div>
+  
+  
+  <a id="OpenText_Fusion_AdapterSdk_Api_AdapterDescriptor_AdditionalCapabilities_" data-uid="OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.AdditionalCapabilities*"></a>
+  <h4 id="OpenText_Fusion_AdapterSdk_Api_AdapterDescriptor_AdditionalCapabilities" data-uid="OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.AdditionalCapabilities">AdditionalCapabilities</h4>
+  <div class="markdown level1 summary"><p>Gets the additional capabilities of the adapter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; AdditionalCapabilities { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>The additional capabilities of the adapter.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenText_Fusion_AdapterSdk_Api_AdapterDescriptor_AdditionalCapabilities_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Additional capabilities that may be present in adapters.</p>
 </div>
   
   

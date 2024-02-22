@@ -5,6 +5,240 @@
   "files": [
     {
       "type": "Conceptual",
+      "source_relative_path": "../../docs/ConsoleApplicationExample.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ConsoleApplicationExample.html",
+          "hash": "34jUlLbin3ZK58la3qrqN2zAfAl7khPw+F1R/JAMtLg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../docs/ExtendedConsoleApplicationExample.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/ExtendedConsoleApplicationExample.html",
+          "hash": "SqEHbs6kyv+Kp8yH3+5jE5ZnNw+hKcGiXbQhMFtQA2I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../docs/WorkerServiceExample.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/WorkerServiceExample.html",
+          "hash": "l1ie45T/2Xlfix3andXKL1e/pevuDUeGsGj3R2y/v5w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../docs/quickstart-1-prerequisites.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/quickstart-1-prerequisites.html",
+          "hash": "zxEXuWL+ArrjbE8Ges5zHtsHTKD7VQs+0tpEKpUPYT0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "../../docs/quickstart-2-running-samples.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/quickstart-2-running-samples.html",
+          "hash": "Jecmz7qhqdbl3QTqsyyOaShgWg1c0Tzyx8V4W4HfHUs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "../../docs/quickstart-3-new-adapter.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/quickstart-3-new-adapter.html",
+          "hash": "7RQhUtPXEgZHHCqFuv+DXmDBZmn0GZbmPtEFON2YpDs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../docs/quickstarts.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/quickstarts.html",
+          "hash": "4peZFHC7G8uD/O9g3+ls/psdvl4lIosXEIngP/DSf3s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "../../docs/samples.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/samples.html",
+          "hash": "Hle1vWDXi7pv07VtSA3om55T6zvCv6Zc0bEkCT9VKj0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../images/AdapterSdk-packages.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/AdapterSdk-packages.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../images/Fusion_Manage.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/Fusion_Manage.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../images/fusion-custom-adapter-repository-options.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/fusion-custom-adapter-repository-options.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../images/fusion-custom-adapter.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/fusion-custom-adapter.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../images/fusion-sources-new-custom-adapter.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/fusion-sources-new-custom-adapter.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../images/fusion_new_workbook.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/fusion_new_workbook.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../images/fusion_workbook_activity.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/fusion_workbook_activity.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../images/fusion_workbook_list.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/fusion_workbook_list.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../images/fusion_workbook_success.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/fusion_workbook_success.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../images/fusion_workspace_content.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/fusion_workspace_content.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../images/fusion_workspaces.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/fusion_workspaces.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "../../samples/samples.zip",
+      "output": {
+        "resource": {
+          "relative_path": "samples/samples.zip"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "README.md",
       "output": {
         ".html": {
@@ -33,7 +267,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.html",
-          "hash": "uezyYTSFCBUOLUrgfz2oKAnUZR2NSLdPoMYhwq/gHaM="
+          "hash": "/Uf/OJMDACeVPCMB0s0dGdGVhuOlUY49yBgoCFV2Wtg="
         }
       },
       "is_incremental": true,
@@ -105,7 +339,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.html",
-          "hash": "XYGG4g2Pw6aEK9Pez/ZSeZ4OFbNvVlG8p87BXNN1OGc="
+          "hash": "YCYoAOpUN+a5mx15jdrAHE5Q45f90EcPLti6L3K73ig="
         }
       },
       "is_incremental": true,
@@ -201,7 +435,7 @@
       "output": {
         ".html": {
           "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.html",
-          "hash": "bLZiaJ/eER3GPQw6cLrMebjaR9vqOPNywLTWVkKCgiw="
+          "hash": "98K+NPxervfNLQ++MjIqA8XEdrAbDiQ1+AcnSdr9eds="
         }
       },
       "is_incremental": true,
@@ -495,12 +729,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "kck+lgmtAsyJMd1isDK5Mdap9VKsQ8qJUA3DkPb76Xc="
+          "hash": "bBrRB+rQK6JH9s0VjLIyN6E49fGTc6PWpvFbhb0vbjM="
         }
       },
       "is_incremental": true,
@@ -553,8 +790,8 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 3
+          "total_file_count": 11,
+          "skipped_file_count": 11
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,

@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Creating a New Adapter From Scratch </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Creating a New Adapter From Scratch ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="creating-a-new-adapter-from-scratch">Creating a New Adapter From Scratch</h1>
+
+<h2 id="overview">Overview</h2>
+<p>This guide will help you to create a new adapter project and explain the building blocks.
+Make sure you have the prerequisites configured as explained <a href="quickstart-1-prerequisites.html">here</a>,</p>
+<p>Adapters can be hosted in various types of applications. Most common ones will be a Console Application or Windows Service.</p>
+<p>SDK provides an engine and other building blocks, but you are responsible for how you want to run it.</p>
+<p>You can use the sample projects as the base for a new adapter by copying and renaming it. The guide below explains building
+an adapter from scratch.</p>
+<h2 id="console-application">Console Application</h2>
+<p>Console application is the simplest hosting model for adapters.</p>
+<p>Start with the following steps to create a console app:</p>
+<ol>
+<li>Open Visual Studio 2022</li>
+<li>Create a new .NET Console application project using .NET 6</li>
+<li>Add references to the latest versions of the following packages:
+<ul>
+<li><code>OpenText.Fusion.AdapterSdk.Api</code></li>
+<li><code>OpenText.Fusion.AdapterSdk.Engine.Runtime</code></li>
+</ul>
+</li>
+<li>Create an implementation of the <a href="../api/OpenText.Fusion.AdapterSdk.Api.IRepositoryAdapter.html"><code>IRepositoryAdapter</code></a> and optionally <a href="../api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.html"><code>IChangeLogSupport</code></a>.</li>
+<li>In the <code>Program.cs</code> file, add the following lines:</li>
+</ol>
+<pre><code class="lang-csharp">using OpenText.Fusion.AdapterSdk.Engine.Runtime;
+using OpenText.Fusion.AdapterSdk.Samples.ConsoleApplicationExample;
+
+// Initialize .NET Core Application
+AppInitializer.Initialize();
+
+// Build engine factory
+var engineFactory = ProcessingEngineFactoryConfigurator.Current.BuildConfigured&lt;MyAdapter&gt;(&quot;MyFs&quot;);
+// Engine construction with simulated requests
+// var engineFactory = ProcessingEngineFactoryConfigurator.Current.BuildConfigured&lt;MyAdapter&gt;(&quot;MyFs&quot;, TestingSetup.ConfigureServiceCollection());
+
+// Create the processing engine
+var processingEngine = engineFactory.CreateEngine();
+
+// Attach to Ctrl+C and cancel processing and shut down the agent when pressed
+var cancellationSource = new CancellationTokenSource();
+Console.CancelKeyPress += (_, _) =&gt; cancellationSource.Cancel();
+
+// StartAsync the engine and wait until it's shut down due to a problem or Ctrl+C pressed
+await processingEngine.ExecuteAsync(cancellationSource.Token);
+</code></pre>
+<p>Above code block initializes the processing engine and executes it.</p>
+<h3 id="repository-adapter-implementation">Repository Adapter Implementation</h3>
+<p>The <a href="../api/OpenText.Fusion.AdapterSdk.Api.IRepositoryAdapter.html"><code>IRepositoryAdapter</code></a> represents an Fusion Source <em>Adapter</em>.</p>
+<p>It contains methods to handle work items from the Fusion.</p>
+<h4 id="createconfiguration-method">CreateConfiguration method</h4>
+<p>CreateConfiguration method should return a class with basic information about the <em>Adapter</em>:</p>
+<ul>
+<li>adapter type</li>
+<li>definitions of properties supported by this adapter</li>
+<li>additional capabilities of the adapter</li>
+</ul>
+<p>The adapter <code>Type</code> property should match the <code>Type</code> specified in Fusion Sources, Custom Adapters:
+<img src="../images/fusion-sources-new-custom-adapter.png" alt="Fusion Add New Custom Adapter Window"></p>
+<p>This method returns <a href="../api/OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.html"><code>IAdapterDescriptor</code></a>. In most cases, the default implementation should be used - <a href="../api/OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.html"><code>AdapterDescriptor</code></a>.</p>
+<p>Example of <code>CreateConfiguration</code> method implementation:</p>
+<pre><code class="lang-csharp">public IAdapterDescriptor CreateDescriptor()
+{
+    return new AdapterDescriptor(&quot;MyCustomAdapter1&quot;,
+                                    new List&lt;RepositorySettingDefinition&gt;
+                                    {
+                                        new(&quot;Location&quot;, TypeCode.String, true, false), 
+                                        new(&quot;UserName&quot;, TypeCode.String, true, false),
+                                        new(&quot;Password&quot;, TypeCode.String, true, true)
+                                    },
+                                    new List&lt;string&gt;
+                                    {
+                                        &quot;ShuffleDataSupport&quot;
+                                    });
+
+}
+</code></pre>
+<p>First parameter in the <code>AdapterDescriptor</code> constructor is the source type name.</p>
+<p>Second parameter lists properties which are supported and required by the adapter.
+The <code>RepositorySettingDefinition</code> constructor expects following values:</p>
+<pre><code class="lang-csharp">public RepositorySettingDefinition(string name, TypeCode typeCode, bool isRequired, bool isEncrypted)
+</code></pre>
+<p>In our example, following properties are expected:</p>
+<ul>
+<li>Location
+<ul>
+<li>required, string type, not encrypted</li>
+</ul>
+</li>
+<li>UserName
+<ul>
+<li>required, string type, not encrypted</li>
+</ul>
+</li>
+<li>Password
+<ul>
+<li>required, string type, encrypted</li>
+</ul>
+</li>
+</ul>
+<p>At the moment, the properties are only used for validation purposes and un-encrypting data from Fusion.</p>
+<blockquote>
+<p>Encrypted fields like passwords are automatically decrypted
+by the SDK. Consumer will have a plain text.</p>
+</blockquote>
+<p>Third parameter lists the additional capabilities of the adapter.</p>
+<p>In our example we have declared that the adapter has <code>ShuffleDataSupport</code>.</p>
+<p>The declared capabilities will be interpreted in Fusion.</p>
+<h4 id="retrievefilelistasync-method">RetrieveFileListAsync method</h4>
+<pre><code class="lang-csharp">Task RetrieveFileListAsync(RetrieveFileListRequest request, IFileListResultsHandler handler, CancellationToken cancellationToken);
+</code></pre>
+<p>This method is responsible for retrieval of a list of files from a <em>source</em>.
+If a <em>source</em> supports change log, then this method would only return changed files.</p>
+<p>In case of <em>sources</em> that doesn't support a change log, this method should retrieve a list of all files in the repository.
+Internally the changes will be detected automatically by comparison of metadata like <code>ModifiedTime</code> or <code>ContentHash</code> if available.</p>
+<p>First parameter, <code>RetrieveFileListRequest request</code>, provides you with information required to query a repository</p>
+<p>Detected files should be <em>queued</em> in the <code>IFileListResultsHandler handler</code> using <code>QueueFileAsync</code> method.</p>
+<p>It is important that all queued files have the basic metadata populated - for example, the <code>ModifiedTime</code> is used to detect
+changed files.</p>
+<p>For example:</p>
+<pre><code class="lang-csharp">handler.QueueFileAsync(new FileMetadata(file.Name, file.FullName)
+                        {
+                            Size = file.Length,
+                            ModifiedTime = file.LastWriteTimeUtc,
+                            AccessedTime = file.LastAccessTimeUtc,
+                            CreatedTime = file.CreationTimeUtc
+                        },
+                        file.DirectoryName ?? string.Empty);
+</code></pre>
+<p>This method has the following signature:</p>
+<pre><code class="lang-csharp">Task QueueFileAsync(IFileMetadata fileMetadata, string groupId);
+</code></pre>
+<h5 id="group-id">Group Id</h5>
+<p>We covered the <code>fileMetadata</code>, but there's also the <code>groupId</code> parameter.
+It is used by Fusion to distribute file data retrieval tasks across multiple adapters or multiple threads
+to improve performance.
+Different groups can execute simultaneously.</p>
+<p>For example if an adapter scans file system shares, folders can potentially come from different drives
+and different machines.
+Specifying a group as a directory name and allowing files from each folder to be retrieved at the
+same time, can improve performance.</p>
+<h5 id="failures">Failures</h5>
+<p>When implementing an adapter, you should place the code that can fail inside the <code>try/catch</code> block.
+If an exception is caught, you should call one of the <code>handler.RegisterFailure</code> methods.</p>
+<p>Depending on the type and place where a failure occurred, it might be related to a specific
+repository file or location (like a file system folder).
+In this case you should call the following overload:</p>
+<pre><code class="lang-csharp">void RegisterFailure(string location, IFailureDetails failureDetails)
+</code></pre>
+<p>If a failure is not specific to any location, or a file, you should use this overload:</p>
+<pre><code class="lang-csharp">void RegisterFailure(IFailureDetails failureDetails)
+</code></pre>
+<p>There is a default implementation of <code>IFailureDetails</code> interface: <code>FailureDetails</code>.</p>
+<h5 id="complete-example-of-retrievefilelist-method">Complete Example of RetrieveFileList Method</h5>
+<p>Here's a complete example of <code>RetrieveFileList</code> method that:</p>
+<ul>
+<li>scans a directory in file system according to the <code>Location</code> property,</li>
+<li>queues information about discovered files</li>
+<li>handles different types of failures</li>
+</ul>
+<pre><code class="lang-csharp">        public async Task RetrieveFileListAsync(RetrieveFileListRequest request, IFileListResultsHandler handler, CancellationToken cancellationToken)
+        {
+            // Get the repository option provided in UI, the location to scan
+            var location = request.RepositoryProperties.RepositoryOptions[&quot;Location&quot;].ToString();
+            var userName = request.RepositoryProperties.RepositoryOptions[&quot;UserName&quot;].ToString();
+            var password = request.RepositoryProperties.RepositoryOptions[&quot;Password&quot;].ToString();
+            
+            try
+            {
+                // Perform some operation, like a login
+                LogIn(userName, password);
+            }
+            catch (Exception ex)
+            {
+                handler.RegisterFailure(new FailureDetails($&quot;Failed to log in to the repository&quot;, ex));
+                return;
+            }
+            var directoryInfo = new DirectoryInfo(location);
+            List&lt;DirectoryInfo&gt; directories;
+            try
+            {
+                // Enumerate top level directories, this can fail
+                directories = directoryInfo.EnumerateDirectories().ToList();
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                // Handle location specific failure
+                handler.RegisterFailure(location, new FailureDetails($&quot;Current user does not have access to {location}&quot;, ex));
+                return;
+            }
+            catch (Exception ex)
+            {
+                // Handle location specific failure
+                handler.RegisterFailure(location, new FailureDetails($&quot;Exception caught when enumerating directories for {location}&quot;, ex));
+                return;
+            }
+            
+            try
+            {
+                foreach (var directory in directories)
+                {
+                    foreach (var file in directory.EnumerateFiles(&quot;*&quot;, SearchOption.AllDirectories))
+                    {
+                        
+                        try
+                        {
+                            // performing some operation on a file that can throw an exception
+                            file.ResolveLinkTarget(true);
+                        }
+                        catch (Exception ex)
+                        {
+                            // Handle a failure that is specific to a repository file
+                            handler.RegisterFailure(file.FullName, new FailureDetails(&quot;Failed to ResolveLinkTarget&quot;, ex));
+                            continue;
+                        }
+                        // Queue information about a discovered file, use directory for a group id
+                        await handler.QueueFileAsync(new FileMetadata(file.Name, file.FullName)
+                                                     {
+                                                         Size = file.Length,
+                                                         ModifiedTime = file.LastWriteTimeUtc,
+                                                         AccessedTime = file.LastAccessTimeUtc,
+                                                         CreatedTime = file.CreationTimeUtc
+                                                     },
+                                                     file.DirectoryName ?? string.Empty);
+                    }
+                }
+
+                
+            }
+            catch (Exception ex)
+            {
+                handler.RegisterFailure(directoryInfo.FullName, new FailureDetails(ex.Message, ex));
+            }
+        }
+</code></pre>
+<p>See the the full implementation in the provided sample in <code>OpenText.Fusion.AdapterSdk.Samples.ConsoleApplicationExample/MyAdapter.cs</code>.</p>
+<h4 id="retrievechangelogasync-method">RetrieveChangeLogAsync method</h4>
+<pre><code class="lang-csharp">Task RetrieveChangeLogAsync(ChangeLogRequest request, IFileListResultsHandler handler, CancellationToken cancellationToken);
+</code></pre>
+<p>This method is responsible for retrieval of a list of files from a <em>source</em>.
+If a <em>source</em> supports change log, then this method would only return changed files that have been updated after the
+LastProcessedDate passed in the request.</p>
+<p>In case of <em>sources</em> that do not support a change log, the adapter will fall back to the <code>RetrieveFileListRequest request</code>.</p>
+<p>First parameter, <code>ChangeLogRequest request</code>, provides you with information required to query a repository.</p>
+<p>Detected files should be <em>queued</em> in the <code>IFileListResultsHandler handler</code> using <code>QueueFileAsync</code> method as per
+the <code>RetrieveFileListAsync</code> method.</p>
+<p>Failures should be handled as per the <code>RetrieveFileListAsync</code> method.</p>
+<h5 id="complete-example-of-retrievechangelogasync-method">Complete Example of RetrieveChangeLogAsync Method</h5>
+<p>Here is a complete example of <code>RetrieveChangeLogAsync</code> method that:</p>
+<ul>
+<li>scans a directory in file system according to the <code>Location</code> property,</li>
+<li>filters files updated since the LastProcessedDate</li>
+<li>queues information about discovered files</li>
+<li>handles different types of failures</li>
+</ul>
+<pre><code class="lang-csharp">        public async Task RetrieveChangeLogAsync(ChangeLogRequest request, IFileListResultsHandler handler, CancellationToken cancellationToken)
+        {
+            _logger.LogInformation(&quot;Executing RetrieveChangeLogAsync with the request: {@ChangeLogRequest}&quot;, request);
+            // Get the repository option provided in UI, the location to scan
+            var location = request.RepositoryProperties.RepositoryOptions.GetOption(&quot;Location&quot;);
+            var userName = request.RepositoryProperties.RepositoryOptions.GetOption(&quot;UserName&quot;);
+            var password = request.RepositoryProperties.RepositoryOptions.GetOption(&quot;Password&quot;);
+            var lastProcessedDate = request.LastProcessedDate;
+
+            try
+            {
+                // Perform some operation, like a login
+                LogIn(userName, password);
+            }
+            catch (Exception ex)
+            {
+                await handler.RegisterFailureAsync(new FailureDetails(&quot;Failed to log in to the repository&quot;, ex));
+                return;
+            }
+
+            var directoryInfo = new DirectoryInfo(location);
+
+            try
+            {
+                foreach (var file in directoryInfo.EnumerateFiles(&quot;*&quot;, SearchOption.AllDirectories))
+                {
+                    cancellationToken.ThrowIfCancellationRequested();
+                    if (lastProcessedDate &lt; file.LastWriteTimeUtc)
+                    {
+                        await handler.QueueFileAsync(new FileMetadata(file.Name, file.FullName)
+                                                     {
+                                                         ModifiedTime = file.LastWriteTimeUtc,
+                                                         AccessedTime = file.LastAccessTimeUtc,
+                                                         CreatedTime = file.CreationTimeUtc
+                                                     },
+                                                     file.DirectoryName ?? string.Empty,
+                                                     cancellationToken);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                await handler.RegisterFailureAsync(directoryInfo.FullName, new FailureDetails(ex.Message, ex));
+            }
+        }
+</code></pre>
+<p>See the the full implementation in the provided sample in <code>OpenText.Fusion.AdapterSdk.Samples.ConsoleApplicationExample/MyAdapter.cs</code>.</p>
+<h4 id="retrievefilesdataasync-method">RetrieveFilesDataAsync method</h4>
+<pre><code class="lang-csharp">Task RetrieveFilesDataAsync(RetrieveFilesDataRequest request, IFileDataResultsHandler handler, CancellationToken cancellationToken)
+</code></pre>
+<p><code>RetrieveFilesDataAsync</code> method is responsible for the binary contents and expensive metadata retrieval.</p>
+<p>During repository update, files that are detected as changed after <code>RetrieveFileListAsync</code> method completes, are passed
+here for further processing:</p>
+<ul>
+<li>binary contents retrieval,</li>
+<li>an expensive to obtain metadata</li>
+</ul>
+<p>The first parameter,<code>RetrieveFilesDataRequest request</code> contains a list of files to retrieve in the <code>Files</code>property:</p>
+<pre><code class="lang-csharp">public IEnumerable&lt;IRepositoryFile&gt; Files { get; }
+</code></pre>
+<p>Usually you'll have to iterate over each file, retrieve the contents and optionally some additional metadata.
+You'll then queue the contents using the <code>IFileDataResultsHandler handler</code>, <code>QueueFileAsync</code> method:</p>
+<pre><code class="lang-csharp">ValueTask QueueFileAsync(string fileId, IFileContents fileContents, IFileMetadata metadata);
+</code></pre>
+<p>The <code>IFileContents</code> interface represents the binary contents of a file.</p>
+<p>The default implementation <code>FileContents</code> class allows creating it using either a stream or using byte array.</p>
+<p>When used with a <code>Stream</code>, this class takes a function with a result of a <code>Stream</code>. You should create the stream
+inside this function, and return it.
+The easiest way is to use a <code>lambda</code> expression:</p>
+<pre><code class="lang-csharp">new FileContents(() =&gt;
+                {
+                    var file = new FileInfo(repositoryFile.Metadata.FileLocation);
+                    return file.OpenRead();
+                })
+</code></pre>
+<p>The actual stream is created and disposed by the SDK.</p>
+<p>Full example:</p>
+<pre><code class="lang-csharp">foreach (var repositoryFile in request.Files)
+{
+    // FileLocation is a string that can be used to access / retrieve a file in a repository. In our case, it's the full path
+    var file = new FileInfo(repositoryFile.Metadata.FileLocation);
+    // Open the file stream
+    var fileStream = file.OpenRead();
+    // Optionally add some additional metadata
+    repositoryFile.Metadata.AdditionalMetadata.Add(&quot;custom_property&quot;, 123);
+    // Queue the data - file contents (using file stream) created as a result of the function, 
+    // and repository file metadata extended by additional property.
+    await handler.QueueFileAsync(repositoryFile.FileId,
+                                    new FileContents(() =&gt;
+                                                    {
+                                                        var file = new FileInfo(repositoryFile.Metadata.FileLocation);
+                                                        return file.OpenRead();
+                                                    }),
+                                    repositoryFile.Metadata,
+                                    cancellationToken);
+}
+</code></pre>
+<h5 id="handling-failures">Handling Failures</h5>
+<p>Failure are handled in a similar way as in the <code>RetrieveFileListAsync</code> method. The <code>IFileDataResultsHandler</code> contains <code>RegisterFailure</code> method.</p>
+<pre><code class="lang-csharp">Stream fileStream;
+try
+{
+    // Both of those operations can fail for various reasons
+    var file = new FileInfo(repositoryFile.Metadata.FileLocation);
+    fileStream = file.OpenRead();
+}
+catch (Exception ex)
+{
+    // Register a failure for the current file. Exceptions message is automatically added to the reported failure.
+    handler.RegisterFailure(repositoryFile.Metadata.FileLocation,
+                            new FailureDetails($&quot;Failed to obtain file contents for {repositoryFile.Metadata.FileLocation}&quot;, ex));
+    continue;
+}
+</code></pre>
+<p>Entire <code>RetrieveFilesDataAsync</code> method example:</p>
+<pre><code class="lang-csharp">public Task RetrieveFilesDataAsync(RetrieveFilesDataRequest request, IFileDataResultsHandler handler, CancellationToken cancellationToken)
+{
+    foreach (var repositoryFile in request.Files)
+    {
+        Stream fileStream;
+        try
+        {
+            // Both of those operations can fail for various reasons
+            var file = new FileInfo(repositoryFile.Metadata.FileLocation);
+            fileStream = file.OpenRead();
+        }
+        catch (Exception ex)
+        {
+            // Register a failure for the current file. Exceptions message is automatically added to the reported failure.
+            handler.RegisterFailure(repositoryFile.Metadata.FileLocation,
+                                    new FailureDetails($&quot;Failed to obtain file contents for {repositoryFile.Metadata.FileLocation}&quot;, ex));
+            continue;
+        }
+
+        repositoryFile.Metadata.AdditionalMetadata.Add(&quot;custom_property&quot;, 123);
+        handler.QueueFileAsync(repositoryFile.FileId, new FileContents(fileStream), repositoryFile.Metadata);
+    }
+    
+    return Task.CompletedTask;
+}
+</code></pre>
+<h2 id="worker-service">Worker Service</h2>
+<p>The <a href="https://docs.microsoft.com/en-us/dotnet/core/extensions/workers">Worker Service</a> is the .NET Core version of
+a long running service.</p>
+<p>This will be the default choice in many cases.</p>
+<p>Creating of a Worker Service is very similar to the console application.</p>
+<p>The only difference is the initialization code and an additional class where the engine is instantiated and started.</p>
+<ol>
+<li>Open Visual Studio 2022</li>
+<li>Create a new project using the Worker Service application template, use .NET 6</li>
+<li>Add references to the latest versions of the following packages:
+<ul>
+<li><code>OpenText.Fusion.AdapterSdk.Api</code></li>
+<li><code>OpenText.Fusion.AdapterSdk.Engine.Runtime</code></li>
+</ul>
+</li>
+<li>Create an implementation of the <a href="../api/OpenText.Fusion.AdapterSdk.Api.IRepositoryAdapter.html"><code>IRepositoryAdapter</code></a> same way as in the console application</li>
+<li>Add the constructor arguments in the <code>Worker.cs</code> class and store them in local fields:</li>
+</ol>
+<pre><code class="lang-csharp">private readonly IProcessingEngineFactory _engineFactory;
+private readonly ILogger&lt;Worker&gt; _logger;
+
+public Worker(ILogger&lt;Worker&gt; logger, IProcessingEngineFactory engineFactory)
+{
+    _logger = logger;
+    _engineFactory = engineFactory;
+}
+</code></pre>
+<ol start="6">
+<li>Add the engine instantiation and startup in the <code>Worker.cs</code> class:</li>
+</ol>
+<pre><code class="lang-csharp">protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+{
+    stoppingToken.Register(() =&gt; _logger.LogInformation(&quot;Worker - cancellation requested, service will stop&quot;));
+    _logger.LogInformation(&quot;Starting Worker Service...&quot;);
+    try
+    {
+        var processingEngine = _engineFactory.CreateEngine();
+    
+        await processingEngine.ExecuteAsync(stoppingToken).ConfigureAwait(false);
+    
+        _logger.LogInformation(&quot;Stopping worker service&quot;);
+    }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, &quot;Exception caught during execution&quot;);
+        throw;
+    }
+}
+</code></pre>
+<ol start="7">
+<li>In the <code>Program.cs</code> file, add the following lines:</li>
+</ol>
+<pre><code class="lang-csharp">using OpenText.Fusion.AdapterSdk.Engine.Runtime;
+using WorkerServiceExample; // Update this with your `Worker` namespace
+
+AppInitializer.Initialize();
+
+var host = Host.CreateDefaultBuilder(args)
+               .ConfigureAppConfiguration((context, builder) =&gt; builder.SetBasePath(AppDomain.CurrentDomain.BaseDirectory).AddJsonFile(&quot;appsettings.json&quot;))
+               .ConfigureServices((context, services) =&gt;
+                                  {
+                                      // Configure the SDK Services
+                                      services.ConfigureAdapterSdk&lt;MyAdapter&gt;(context.Configuration, &quot;MyAdapter&quot;)
+                                              // Add Worker as a hosted service
+                                              .AddHostedService&lt;Worker&gt;();
+                                  })
+               // At the moment, only Windows platform is supported and the service can be deployed as Windows Service
+               .UseWindowsService()
+               .Build();
+
+await host.RunAsync();
+
+</code></pre>
+<h2 id="delete-files-from-workbook">Delete files from Workbook</h2>
+<p>After scanning of files we can delete those files from workspace using <strong>Delete</strong> activity, also we can debug this functionality using sample project.</p>
+<p><a href="quickstart-2-running-samples.html#delete-files-from-workspace">Click here</a> for how to debug the code.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

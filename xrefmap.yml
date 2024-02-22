@@ -38,15 +38,15 @@ references:
   commentId: T:OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor
   fullName: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor
   nameWithType: AdapterDescriptor
-- uid: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.#ctor(System.String,IEnumerable{OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition})
-  name: AdapterDescriptor(String, IEnumerable<RepositorySettingDefinition>)
-  href: api/OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.html#OpenText_Fusion_AdapterSdk_Api_AdapterDescriptor__ctor_System_String_IEnumerable_OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition__
-  commentId: M:OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.#ctor(System.String,IEnumerable{OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition})
-  name.vb: AdapterDescriptor(String, IEnumerable(Of RepositorySettingDefinition))
-  fullName: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.AdapterDescriptor(System.String, IEnumerable<OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition>)
-  fullName.vb: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.AdapterDescriptor(System.String, IEnumerable(Of OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition))
-  nameWithType: AdapterDescriptor.AdapterDescriptor(String, IEnumerable<RepositorySettingDefinition>)
-  nameWithType.vb: AdapterDescriptor.AdapterDescriptor(String, IEnumerable(Of RepositorySettingDefinition))
+- uid: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.#ctor(System.String,IEnumerable{OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition},System.Nullable{IEnumerable{System.String}})
+  name: AdapterDescriptor(String, IEnumerable<RepositorySettingDefinition>, Nullable<IEnumerable<String>>)
+  href: api/OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.html#OpenText_Fusion_AdapterSdk_Api_AdapterDescriptor__ctor_System_String_IEnumerable_OpenText_Fusion_AdapterSdk_Api_RepositorySettingDefinition__System_Nullable_IEnumerable_System_String___
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.#ctor(System.String,IEnumerable{OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition},System.Nullable{IEnumerable{System.String}})
+  name.vb: AdapterDescriptor(String, IEnumerable(Of RepositorySettingDefinition), Nullable(Of IEnumerable(Of String)))
+  fullName: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.AdapterDescriptor(System.String, IEnumerable<OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition>, System.Nullable<IEnumerable<System.String>>)
+  fullName.vb: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.AdapterDescriptor(System.String, IEnumerable(Of OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition), System.Nullable(Of IEnumerable(Of System.String)))
+  nameWithType: AdapterDescriptor.AdapterDescriptor(String, IEnumerable<RepositorySettingDefinition>, Nullable<IEnumerable<String>>)
+  nameWithType.vb: AdapterDescriptor.AdapterDescriptor(String, IEnumerable(Of RepositorySettingDefinition), Nullable(Of IEnumerable(Of String)))
 - uid: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.#ctor*
   name: AdapterDescriptor
   href: api/OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.html#OpenText_Fusion_AdapterSdk_Api_AdapterDescriptor__ctor_
@@ -67,6 +67,19 @@ references:
   isSpec: "True"
   fullName: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.AdapterType
   nameWithType: AdapterDescriptor.AdapterType
+- uid: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.AdditionalCapabilities
+  name: AdditionalCapabilities
+  href: api/OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.html#OpenText_Fusion_AdapterSdk_Api_AdapterDescriptor_AdditionalCapabilities
+  commentId: P:OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.AdditionalCapabilities
+  fullName: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.AdditionalCapabilities
+  nameWithType: AdapterDescriptor.AdditionalCapabilities
+- uid: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.AdditionalCapabilities*
+  name: AdditionalCapabilities
+  href: api/OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.html#OpenText_Fusion_AdapterSdk_Api_AdapterDescriptor_AdditionalCapabilities_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.AdditionalCapabilities
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.AdditionalCapabilities
+  nameWithType: AdapterDescriptor.AdditionalCapabilities
 - uid: OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.SettingDefinitions
   name: SettingDefinitions
   href: api/OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.html#OpenText_Fusion_AdapterSdk_Api_AdapterDescriptor_SettingDefinitions
@@ -430,6 +443,19 @@ references:
   isSpec: "True"
   fullName: OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.AdapterType
   nameWithType: IAdapterDescriptor.AdapterType
+- uid: OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.AdditionalCapabilities
+  name: AdditionalCapabilities
+  href: api/OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.html#OpenText_Fusion_AdapterSdk_Api_IAdapterDescriptor_AdditionalCapabilities
+  commentId: P:OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.AdditionalCapabilities
+  fullName: OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.AdditionalCapabilities
+  nameWithType: IAdapterDescriptor.AdditionalCapabilities
+- uid: OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.AdditionalCapabilities*
+  name: AdditionalCapabilities
+  href: api/OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.html#OpenText_Fusion_AdapterSdk_Api_IAdapterDescriptor_AdditionalCapabilities_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.AdditionalCapabilities
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.AdditionalCapabilities
+  nameWithType: IAdapterDescriptor.AdditionalCapabilities
 - uid: OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.SettingDefinitions
   name: SettingDefinitions
   href: api/OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.html#OpenText_Fusion_AdapterSdk_Api_IAdapterDescriptor_SettingDefinitions
@@ -617,6 +643,32 @@ references:
   commentId: T:OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler
   fullName: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler
   nameWithType: IFileDataResultsHandler
+- uid: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.AddDeletedItemAsync(System.String,CancellationToken)
+  name: AddDeletedItemAsync(String, CancellationToken)
+  href: api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.html#OpenText_Fusion_AdapterSdk_Api_IFileDataResultsHandler_AddDeletedItemAsync_System_String_CancellationToken_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.AddDeletedItemAsync(System.String,CancellationToken)
+  fullName: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.AddDeletedItemAsync(System.String, CancellationToken)
+  nameWithType: IFileDataResultsHandler.AddDeletedItemAsync(String, CancellationToken)
+- uid: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.AddDeletedItemAsync*
+  name: AddDeletedItemAsync
+  href: api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.html#OpenText_Fusion_AdapterSdk_Api_IFileDataResultsHandler_AddDeletedItemAsync_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.AddDeletedItemAsync
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.AddDeletedItemAsync
+  nameWithType: IFileDataResultsHandler.AddDeletedItemAsync
+- uid: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.AddLostItemAsync(System.String,CancellationToken)
+  name: AddLostItemAsync(String, CancellationToken)
+  href: api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.html#OpenText_Fusion_AdapterSdk_Api_IFileDataResultsHandler_AddLostItemAsync_System_String_CancellationToken_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.AddLostItemAsync(System.String,CancellationToken)
+  fullName: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.AddLostItemAsync(System.String, CancellationToken)
+  nameWithType: IFileDataResultsHandler.AddLostItemAsync(String, CancellationToken)
+- uid: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.AddLostItemAsync*
+  name: AddLostItemAsync
+  href: api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.html#OpenText_Fusion_AdapterSdk_Api_IFileDataResultsHandler_AddLostItemAsync_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.AddLostItemAsync
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.AddLostItemAsync
+  nameWithType: IFileDataResultsHandler.AddLostItemAsync
 - uid: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync(System.String,Func{Stream},OpenText.Fusion.AdapterSdk.Api.IFileMetadata,CancellationToken)
   name: QueueFileAsync(String, Func<Stream>, IFileMetadata, CancellationToken)
   href: api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.html#OpenText_Fusion_AdapterSdk_Api_IFileDataResultsHandler_QueueFileAsync_System_String_Func_Stream__OpenText_Fusion_AdapterSdk_Api_IFileMetadata_CancellationToken_

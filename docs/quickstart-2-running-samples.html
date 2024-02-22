@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Building and Running Sample Projects </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Building and Running Sample Projects ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="building-and-running-sample-projects">Building and Running Sample Projects</h1>
+
+<h2 id="console-application">Console Application</h2>
+<h3 id="building-and-running-console-application">Building and Running Console Application</h3>
+<ol>
+<li>If you have not already downloaded them, the samples can be found <a href="../samples/samples.zip">here</a>.</li>
+<li>Open the <code>ConsoleApplicationExample.sln</code> solution file.</li>
+<li>Right-click the solution and click <code>Restore NuGet Packages</code> menu item.</li>
+<li>Right-click the solution and click <code>Build Solution</code></li>
+<li>Click <code>Debug &gt; Start Debugging</code> to start the app in Debug mode</li>
+</ol>
+<p>This starts the console application sample.</p>
+<p>To test the sample adapter, set up a <em>Custom Adapter</em>, a <em>Source</em> and a <em>Repository</em>.
+Follow these steps:</p>
+<ol>
+<li><p>Go to <strong>Fusion &gt; Connect</strong> screen</p>
+</li>
+<li><p>Navigate to <strong>Sources &gt; Custom Adapters</strong></p>
+<p><img src="../images/fusion-custom-adapter.png" alt="Fusion Custom Adapters"></p>
+</li>
+<li><p>Click <strong>New Custom Adapter</strong> <img src="../images/fusion-sources-new-custom-adapter.png" alt="Fusion Add New Custom Adapter Window"></p>
+</li>
+<li><p>Enter <em>MyCustomAdapter1</em> into <strong>Type</strong> and complete the remaining General options as desired</p>
+</li>
+<li><p>Click <strong>Next</strong> until you get to <strong>Repository Options</strong> page</p>
+</li>
+<li><p>Add <em>Location</em>, <em>UserName</em> and <em>Password</em> options
+<img src="../images/fusion-custom-adapter-repository-options.png" alt="Fusion Custom Adapters Repository Options"></p>
+</li>
+<li><p>Click <strong>Finish</strong></p>
+</li>
+<li><p>Create a new <strong>Source</strong> based on the new custom adapter</p>
+</li>
+<li><p>Create a new <strong>Repository</strong> for the new source. In the <strong>Location</strong> field, define a folder path to scan</p>
+<blockquote>
+<p>This can be either a local path or a file share. Make sure that the current user has access to this folder.</p>
+</blockquote>
+</li>
+<li><p>Optionally, place a breakpoint in <code>MyAdapter</code>, <code>RetrieveFileListAsync</code> and <code>RetrieveFilesDataAsync</code> methods to see the execution.</p>
+</li>
+<li><p>On the <strong>Manage Repositories</strong>, click the row for the new repository and then click the update icon that displays in the repository row.
+This triggers a scan of the folder and processing of files by Fusion.</p>
+</li>
+</ol>
+<p>If you added breakpoints in <code>MyAdapter</code> then the first breakpoint hit should be in <a href="../api/OpenText.Fusion.AdapterSdk.Api.IRepositoryAdapter.html#OpenText_Fusion_AdapterSdk_Api_IRepositoryAdapter_RetrieveFileListAsync_OpenText_Fusion_AdapterSdk_Api_RetrieveFileListRequest_OpenText_Fusion_AdapterSdk_Api_IFileListResultsHandler_System_Threading_CancellationToken_"><code>RetrieveFileListAsync</code></a> method.
+The second - <a href="../api/OpenText.Fusion.AdapterSdk.Api.IRepositoryAdapter.html#OpenText_Fusion_AdapterSdk_Api_IRepositoryAdapter_RetrieveFilesDataAsync_OpenText_Fusion_AdapterSdk_Api_RepositoryFilesRequest_OpenText_Fusion_AdapterSdk_Api_IFileDataResultsHandler_System_Threading_CancellationToken_"><code>RetrieveFilesDataAsync</code></a>.
+Read through the detailed description in the links above.</p>
+<p>After the operation finishes, check that all documents were loaded in Fusion.</p>
+<blockquote>
+<p>More details about the Console Application sample can be found <a href="ConsoleApplicationExample.html">here</a>.</p>
+</blockquote>
+<h2 id="delete-files-from-workspace">Delete files from workspace</h2>
+<p>To test the delete files from custom adapter workspace, set up a <em>Workspace</em> and a <em>Workbook</em>.
+Follow these steps:</p>
+<ol>
+<li><p>Go to <strong>Fusion &gt; Connect</strong> screen</p>
+</li>
+<li><p>Navigate to <strong>Fusion &gt; Manage &gt; Workspaces</strong></p>
+<p><img src="../images/Fusion_Manage.png" alt="Fusion Manage"></p>
+</li>
+<li><p>Click <strong>New Workspace</strong></p>
+</li>
+<li><p>Enter any name into <strong>Name</strong> and uncheck <strong>Enforce Policy Review</strong> option and click on <strong>OK</strong> to finish setup. <img src="../images/fusion_new_workbook.png" alt="Fusion New Workspace window"></p>
+</li>
+<li><p>Click on newly created Workspace and go to <strong>Content</strong> there you will see list of scanned documents. <img src="../images/fusion_workspace_content.png" alt="Fusion Workspace Content"></p>
+</li>
+<li><p>Select file/s which you want to delete, and click on Manage icon, you will get list of options.</p>
+</li>
+<li><p>Click on <strong>Add selected to Workbook</strong> option, it will open window.<img src="../images/fusion_workbook_list.png" alt="Fusion Workbook list"></p>
+</li>
+<li><p>It will show list of existing workbook if present else click on <strong>NEW WORKBOOK</strong> option. In that enter any workbook name in <strong>Name</strong> field and click on <strong>CREATE</strong>. <img src="../images/fusion_workbook.png" alt="Fusion Workbook"></p>
+</li>
+<li><p>Select newly created workbook from previous opened window and click on <strong>ADD</strong> button, window will get closed.</p>
+</li>
+<li><p>After few minuets you can see file count in Item column. and click on blue left arrow highlighted. <img src="../images/fusion_workbook_success.png" alt="Fusion Workbook list"></p>
+</li>
+<li><p>It will open side bar in that click <strong>Activity</strong> and click on <strong>Delete</strong> icon. <img src="../images/fusion_workbook_activity.png" alt="Fusion Workbook activity"></p>
+</li>
+</ol>
+<p>If you added breakpoint in <code>DeleteFilesAsync</code> method of <code>MyAdapter</code> class then the breakpoint gets hit.</p>
+<p>After the operation finishes, check that all documents from workbook and from local/network folder gets removed.</p>
+<h2 id="worker-service">Worker Service</h2>
+<p>The Worker Service can be used as a Windows Service in production or a console application during development.</p>
+<p>Steps for running the sample as a Consol App are the same as the Console Application sample.</p>
+<p>This command line argument is configured in the provided sample project in <code>OpenText.Fusion.AdapterSdk.Samples.WorkerServiceExample/Properties/launchSettings.json</code>.</p>
+<p>Steps to install the sample as <em>Windows Service</em> are provided <a href="WorkerServiceExample.html">here</a>.</p>
+<p>Next - <a href="quickstart-3-new-adapter.html">Creating a New Adapter</a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
