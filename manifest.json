@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/ConsoleApplicationExample.html",
-          "hash": "34jUlLbin3ZK58la3qrqN2zAfAl7khPw+F1R/JAMtLg="
+          "hash": "NEhLrssCLv3RVJ6iCqW+h7t1gOQDjW0dxZIlDpl+S9A="
         }
       },
       "is_incremental": true,
@@ -60,7 +60,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/quickstart-2-running-samples.html",
-          "hash": "Jecmz7qhqdbl3QTqsyyOaShgWg1c0Tzyx8V4W4HfHUs="
+          "hash": "0rV1VQmxtLzJHrrAvuGTbgscCAJQ9UVigkl9KHSTwmc="
         }
       },
       "is_incremental": true,
@@ -99,7 +99,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/samples.html",
-          "hash": "Hle1vWDXi7pv07VtSA3om55T6zvCv6Zc0bEkCT9VKj0="
+          "hash": "9q/6FkK09knMcf9zecPq4mND4wUuCXAxT8TH91u8/kM="
         }
       },
       "is_incremental": true,
@@ -221,17 +221,6 @@
       "output": {
         "resource": {
           "relative_path": "images/fusion_workspaces.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "../../samples/samples.zip",
-      "output": {
-        "resource": {
-          "relative_path": "samples/samples.zip"
         }
       },
       "is_incremental": false,
@@ -737,7 +726,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "YCRzZkxg9+FWqAi2mRJIDzbqp+VAZSwzAQ1xXHsZ4f0="
+          "hash": "fAE44joc9H2HOhGOIMBEzz1cA9xK0JlNpY54v6HfeEs="
         }
       },
       "is_incremental": true,
