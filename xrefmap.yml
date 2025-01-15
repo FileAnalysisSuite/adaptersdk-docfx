@@ -234,6 +234,19 @@ references:
   isSpec: "True"
   fullName: OpenText.Fusion.AdapterSdk.Api.FailureDetails.Message
   nameWithType: FailureDetails.Message
+- uid: OpenText.Fusion.AdapterSdk.Api.FailureDetails.ToString
+  name: ToString()
+  href: api/OpenText.Fusion.AdapterSdk.Api.FailureDetails.html#OpenText_Fusion_AdapterSdk_Api_FailureDetails_ToString
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.FailureDetails.ToString
+  fullName: OpenText.Fusion.AdapterSdk.Api.FailureDetails.ToString()
+  nameWithType: FailureDetails.ToString()
+- uid: OpenText.Fusion.AdapterSdk.Api.FailureDetails.ToString*
+  name: ToString
+  href: api/OpenText.Fusion.AdapterSdk.Api.FailureDetails.html#OpenText_Fusion_AdapterSdk_Api_FailureDetails_ToString_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.FailureDetails.ToString
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.FailureDetails.ToString
+  nameWithType: FailureDetails.ToString
 - uid: OpenText.Fusion.AdapterSdk.Api.FileMetadata
   name: FileMetadata
   href: api/OpenText.Fusion.AdapterSdk.Api.FileMetadata.html
@@ -669,6 +682,15 @@ references:
   isSpec: "True"
   fullName: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.AddLostItemAsync
   nameWithType: IFileDataResultsHandler.AddLostItemAsync
+- uid: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync(System.String,Func{IFileInfo,CancellationToken,Task},OpenText.Fusion.AdapterSdk.Api.IFileMetadata,IEnumerable{OpenText.Fusion.AdapterSdk.Api.IFailure},CancellationToken)
+  name: QueueFileAsync(String, Func<IFileInfo, CancellationToken, Task>, IFileMetadata, IEnumerable<IFailure>, CancellationToken)
+  href: api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.html#OpenText_Fusion_AdapterSdk_Api_IFileDataResultsHandler_QueueFileAsync_System_String_Func_IFileInfo_CancellationToken_Task__OpenText_Fusion_AdapterSdk_Api_IFileMetadata_IEnumerable_OpenText_Fusion_AdapterSdk_Api_IFailure__CancellationToken_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync(System.String,Func{IFileInfo,CancellationToken,Task},OpenText.Fusion.AdapterSdk.Api.IFileMetadata,IEnumerable{OpenText.Fusion.AdapterSdk.Api.IFailure},CancellationToken)
+  name.vb: QueueFileAsync(String, Func(Of IFileInfo, CancellationToken, Task), IFileMetadata, IEnumerable(Of IFailure), CancellationToken)
+  fullName: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync(System.String, Func<IFileInfo, CancellationToken, Task>, OpenText.Fusion.AdapterSdk.Api.IFileMetadata, IEnumerable<OpenText.Fusion.AdapterSdk.Api.IFailure>, CancellationToken)
+  fullName.vb: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync(System.String, Func(Of IFileInfo, CancellationToken, Task), OpenText.Fusion.AdapterSdk.Api.IFileMetadata, IEnumerable(Of OpenText.Fusion.AdapterSdk.Api.IFailure), CancellationToken)
+  nameWithType: IFileDataResultsHandler.QueueFileAsync(String, Func<IFileInfo, CancellationToken, Task>, IFileMetadata, IEnumerable<IFailure>, CancellationToken)
+  nameWithType.vb: IFileDataResultsHandler.QueueFileAsync(String, Func(Of IFileInfo, CancellationToken, Task), IFileMetadata, IEnumerable(Of IFailure), CancellationToken)
 - uid: OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.QueueFileAsync(System.String,Func{Stream},OpenText.Fusion.AdapterSdk.Api.IFileMetadata,CancellationToken)
   name: QueueFileAsync(String, Func<Stream>, IFileMetadata, CancellationToken)
   href: api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.html#OpenText_Fusion_AdapterSdk_Api_IFileDataResultsHandler_QueueFileAsync_System_String_Func_Stream__OpenText_Fusion_AdapterSdk_Api_IFileMetadata_CancellationToken_
@@ -970,19 +992,6 @@ references:
   commentId: T:OpenText.Fusion.AdapterSdk.Api.IRepositoryFile
   fullName: OpenText.Fusion.AdapterSdk.Api.IRepositoryFile
   nameWithType: IRepositoryFile
-- uid: OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.Contents
-  name: Contents
-  href: api/OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.html#OpenText_Fusion_AdapterSdk_Api_IRepositoryFile_Contents
-  commentId: P:OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.Contents
-  fullName: OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.Contents
-  nameWithType: IRepositoryFile.Contents
-- uid: OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.Contents*
-  name: Contents
-  href: api/OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.html#OpenText_Fusion_AdapterSdk_Api_IRepositoryFile_Contents_
-  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.Contents
-  isSpec: "True"
-  fullName: OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.Contents
-  nameWithType: IRepositoryFile.Contents
 - uid: OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.FileId
   name: FileId
   href: api/OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.html#OpenText_Fusion_AdapterSdk_Api_IRepositoryFile_FileId
@@ -1066,6 +1075,19 @@ references:
   commentId: T:OpenText.Fusion.AdapterSdk.Api.IStoreFile
   fullName: OpenText.Fusion.AdapterSdk.Api.IStoreFile
   nameWithType: IStoreFile
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreFile.DestinationPath
+  name: DestinationPath
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html#OpenText_Fusion_AdapterSdk_Api_IStoreFile_DestinationPath
+  commentId: P:OpenText.Fusion.AdapterSdk.Api.IStoreFile.DestinationPath
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreFile.DestinationPath
+  nameWithType: IStoreFile.DestinationPath
+- uid: OpenText.Fusion.AdapterSdk.Api.IStoreFile.DestinationPath*
+  name: DestinationPath
+  href: api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html#OpenText_Fusion_AdapterSdk_Api_IStoreFile_DestinationPath_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IStoreFile.DestinationPath
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IStoreFile.DestinationPath
+  nameWithType: IStoreFile.DestinationPath
 - uid: OpenText.Fusion.AdapterSdk.Api.IStoreFile.FileName
   name: FileName
   href: api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html#OpenText_Fusion_AdapterSdk_Api_IStoreFile_FileName
@@ -1199,15 +1221,6 @@ references:
   commentId: M:OpenText.Fusion.AdapterSdk.Api.RepositoryFile.#ctor(System.String)
   fullName: OpenText.Fusion.AdapterSdk.Api.RepositoryFile.RepositoryFile(System.String)
   nameWithType: RepositoryFile.RepositoryFile(String)
-- uid: OpenText.Fusion.AdapterSdk.Api.RepositoryFile.#ctor(System.String,Func{Stream},OpenText.Fusion.AdapterSdk.Api.IFileMetadata)
-  name: RepositoryFile(String, Func<Stream>, IFileMetadata)
-  href: api/OpenText.Fusion.AdapterSdk.Api.RepositoryFile.html#OpenText_Fusion_AdapterSdk_Api_RepositoryFile__ctor_System_String_Func_Stream__OpenText_Fusion_AdapterSdk_Api_IFileMetadata_
-  commentId: M:OpenText.Fusion.AdapterSdk.Api.RepositoryFile.#ctor(System.String,Func{Stream},OpenText.Fusion.AdapterSdk.Api.IFileMetadata)
-  name.vb: RepositoryFile(String, Func(Of Stream), IFileMetadata)
-  fullName: OpenText.Fusion.AdapterSdk.Api.RepositoryFile.RepositoryFile(System.String, Func<Stream>, OpenText.Fusion.AdapterSdk.Api.IFileMetadata)
-  fullName.vb: OpenText.Fusion.AdapterSdk.Api.RepositoryFile.RepositoryFile(System.String, Func(Of Stream), OpenText.Fusion.AdapterSdk.Api.IFileMetadata)
-  nameWithType: RepositoryFile.RepositoryFile(String, Func<Stream>, IFileMetadata)
-  nameWithType.vb: RepositoryFile.RepositoryFile(String, Func(Of Stream), IFileMetadata)
 - uid: OpenText.Fusion.AdapterSdk.Api.RepositoryFile.#ctor(System.String,OpenText.Fusion.AdapterSdk.Api.IFileMetadata)
   name: RepositoryFile(String, IFileMetadata)
   href: api/OpenText.Fusion.AdapterSdk.Api.RepositoryFile.html#OpenText_Fusion_AdapterSdk_Api_RepositoryFile__ctor_System_String_OpenText_Fusion_AdapterSdk_Api_IFileMetadata_
@@ -1221,19 +1234,6 @@ references:
   isSpec: "True"
   fullName: OpenText.Fusion.AdapterSdk.Api.RepositoryFile.RepositoryFile
   nameWithType: RepositoryFile.RepositoryFile
-- uid: OpenText.Fusion.AdapterSdk.Api.RepositoryFile.Contents
-  name: Contents
-  href: api/OpenText.Fusion.AdapterSdk.Api.RepositoryFile.html#OpenText_Fusion_AdapterSdk_Api_RepositoryFile_Contents
-  commentId: P:OpenText.Fusion.AdapterSdk.Api.RepositoryFile.Contents
-  fullName: OpenText.Fusion.AdapterSdk.Api.RepositoryFile.Contents
-  nameWithType: RepositoryFile.Contents
-- uid: OpenText.Fusion.AdapterSdk.Api.RepositoryFile.Contents*
-  name: Contents
-  href: api/OpenText.Fusion.AdapterSdk.Api.RepositoryFile.html#OpenText_Fusion_AdapterSdk_Api_RepositoryFile_Contents_
-  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.RepositoryFile.Contents
-  isSpec: "True"
-  fullName: OpenText.Fusion.AdapterSdk.Api.RepositoryFile.Contents
-  nameWithType: RepositoryFile.Contents
 - uid: OpenText.Fusion.AdapterSdk.Api.RepositoryFile.FileId
   name: FileId
   href: api/OpenText.Fusion.AdapterSdk.Api.RepositoryFile.html#OpenText_Fusion_AdapterSdk_Api_RepositoryFile_FileId
@@ -1301,18 +1301,6 @@ references:
   commentId: T:OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames
   fullName: OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames
   nameWithType: RepositoryOptionNames
-- uid: OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.FileExtensionsCantHaveCSVs
-  name: FileExtensionsCantHaveCSVs
-  href: api/OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.html#OpenText_Fusion_AdapterSdk_Api_RepositoryOptionNames_FileExtensionsCantHaveCSVs
-  commentId: F:OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.FileExtensionsCantHaveCSVs
-  fullName: OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.FileExtensionsCantHaveCSVs
-  nameWithType: RepositoryOptionNames.FileExtensionsCantHaveCSVs
-- uid: OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.FileExtensionsMustHaveCSVs
-  name: FileExtensionsMustHaveCSVs
-  href: api/OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.html#OpenText_Fusion_AdapterSdk_Api_RepositoryOptionNames_FileExtensionsMustHaveCSVs
-  commentId: F:OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.FileExtensionsMustHaveCSVs
-  fullName: OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.FileExtensionsMustHaveCSVs
-  nameWithType: RepositoryOptionNames.FileExtensionsMustHaveCSVs
 - uid: OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.Filter
   name: Filter
   href: api/OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.html#OpenText_Fusion_AdapterSdk_Api_RepositoryOptionNames_Filter
