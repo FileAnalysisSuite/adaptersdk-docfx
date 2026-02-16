@@ -1,5 +1,4 @@
 {
-  "homepages": [],
   "source_base_path": "/wd/src/OpenText.Fusion.AdapterSdk.Api",
   "xrefmap": "xrefmap.yml",
   "files": [
@@ -8,11 +7,9 @@
       "source_relative_path": "../../docs/ConsoleApplicationExample.md",
       "output": {
         ".html": {
-          "relative_path": "docs/ConsoleApplicationExample.html",
-          "hash": "NEhLrssCLv3RVJ6iCqW+h7t1gOQDjW0dxZIlDpl+S9A="
+          "relative_path": "docs/ConsoleApplicationExample.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -20,11 +17,9 @@
       "source_relative_path": "../../docs/ExtendedConsoleApplicationExample.md",
       "output": {
         ".html": {
-          "relative_path": "docs/ExtendedConsoleApplicationExample.html",
-          "hash": "SqEHbs6kyv+Kp8yH3+5jE5ZnNw+hKcGiXbQhMFtQA2I="
+          "relative_path": "docs/ExtendedConsoleApplicationExample.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -32,11 +27,9 @@
       "source_relative_path": "../../docs/WorkerServiceExample.md",
       "output": {
         ".html": {
-          "relative_path": "docs/WorkerServiceExample.html",
-          "hash": "l1ie45T/2Xlfix3andXKL1e/pevuDUeGsGj3R2y/v5w="
+          "relative_path": "docs/WorkerServiceExample.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -44,41 +37,29 @@
       "source_relative_path": "../../docs/quickstart-1-prerequisites.md",
       "output": {
         ".html": {
-          "relative_path": "docs/quickstart-1-prerequisites.html",
-          "hash": "zxEXuWL+ArrjbE8Ges5zHtsHTKD7VQs+0tpEKpUPYT0="
+          "relative_path": "docs/quickstart-1-prerequisites.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "../../docs/quickstart-2-running-samples.md",
       "output": {
         ".html": {
-          "relative_path": "docs/quickstart-2-running-samples.html",
-          "hash": "0rV1VQmxtLzJHrrAvuGTbgscCAJQ9UVigkl9KHSTwmc="
+          "relative_path": "docs/quickstart-2-running-samples.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "../../docs/quickstart-3-new-adapter.md",
       "output": {
         ".html": {
-          "relative_path": "docs/quickstart-3-new-adapter.html",
-          "hash": "7RQhUtPXEgZHHCqFuv+DXmDBZmn0GZbmPtEFON2YpDs="
+          "relative_path": "docs/quickstart-3-new-adapter.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -86,11 +67,9 @@
       "source_relative_path": "../../docs/quickstarts.md",
       "output": {
         ".html": {
-          "relative_path": "docs/quickstarts.html",
-          "hash": "4peZFHC7G8uD/O9g3+ls/psdvl4lIosXEIngP/DSf3s="
+          "relative_path": "docs/quickstarts.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -98,11 +77,9 @@
       "source_relative_path": "../../docs/samples.md",
       "output": {
         ".html": {
-          "relative_path": "docs/samples.html",
-          "hash": "9q/6FkK09knMcf9zecPq4mND4wUuCXAxT8TH91u8/kM="
+          "relative_path": "docs/samples.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -113,7 +90,6 @@
           "relative_path": "images/AdapterSdk-packages.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -124,7 +100,6 @@
           "relative_path": "images/Fusion_Manage.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -135,7 +110,6 @@
           "relative_path": "images/fusion-custom-adapter-repository-options.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -146,7 +120,6 @@
           "relative_path": "images/fusion-custom-adapter.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -157,7 +130,6 @@
           "relative_path": "images/fusion-sources-new-custom-adapter.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -168,7 +140,6 @@
           "relative_path": "images/fusion_new_workbook.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -179,7 +150,6 @@
           "relative_path": "images/fusion_workbook_activity.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -190,7 +160,6 @@
           "relative_path": "images/fusion_workbook_list.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -201,7 +170,6 @@
           "relative_path": "images/fusion_workbook_success.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -212,7 +180,6 @@
           "relative_path": "images/fusion_workspace_content.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -223,7 +190,6 @@
           "relative_path": "images/fusion_workspaces.png"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -231,11 +197,9 @@
       "source_relative_path": "README.md",
       "output": {
         ".html": {
-          "relative_path": "README.html",
-          "hash": "//WsFzFbi89JqdiI1zI2R4xKjiYLAk4klcuyikw4P6w="
+          "relative_path": "README.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -243,455 +207,527 @@
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.AbortRequestedException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.AbortRequestedException.html",
-          "hash": "cm3nrTtG7W3PH3Mfrmb8ZkYUzN22tBbecLtZEctYkyE="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.AbortRequestedException.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.AbortRequestedException",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.AbortRequestedException.yml\" sourcestartlinenumber=\"1\">Exception thrown when the current operation should be aborted.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.html",
-          "hash": "/Uf/OJMDACeVPCMB0s0dGdGVhuOlUY49yBgoCFV2Wtg="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.AdapterDescriptor.yml\" sourcestartlinenumber=\"1\">Information about the adapter.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.html",
-          "hash": "XzMgVoQmjknuCj7oIf0uxLWJpSz6QLH2nCkkJ839DOk="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest.yml\" sourcestartlinenumber=\"1\">Provides information required to run the RetrieveChangeLog command.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.Failure.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.Failure.html",
-          "hash": "MDlzj/yS4p1jDFH1BccNTsUn8SVHmkC+bM2sIcOwkOE="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.Failure.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.Failure",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.Failure.yml\" sourcestartlinenumber=\"1\">Details of a failure.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.FailureDetails.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.FailureDetails.html",
-          "hash": "s49VnrCFKqv1QPQoocNfs0pn5dvG4LG/FSm0pEqDerQ="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.FailureDetails.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.FailureDetails",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.FailureDetails.yml\" sourcestartlinenumber=\"1\">Details of a failure.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.FileMetadata.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.FileMetadata.html",
-          "hash": "KL7JJdhU2GlpWihR0VbteqXgZBTJxIotQ103qZVTiHY="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.FileMetadata.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.FileMetadata",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.FileMetadata.yml\" sourcestartlinenumber=\"1\">Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.HandlerRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.HandlerRequest.html",
-          "hash": "lSbZHFPX1l2wK5juRKROscwkKaW/HSQqLJApdvL2OH8="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.HandlerRequest.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.HandlerRequest",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.HandlerRequest.yml\" sourcestartlinenumber=\"1\">Base class for request types.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.html",
-          "hash": "YCYoAOpUN+a5mx15jdrAHE5Q45f90EcPLti6L3K73ig="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.yml\" sourcestartlinenumber=\"1\">The Adapter configuration.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.html",
-          "hash": "Cy1wmCQkqs2onUNfIddcSlipI/c8pNtXIYJ4EhpHlbw="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.yml\" sourcestartlinenumber=\"1\">ChangeLog action support.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IConfigurationEncryption.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IConfigurationEncryption.html",
-          "hash": "8OYBoda2+d3A+vafoP3Q4+cxAxjtQInXCsOeU0fpXTc="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IConfigurationEncryption.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IConfigurationEncryption",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IConfigurationEncryption.yml\" sourcestartlinenumber=\"1\">Decrypts encrypted configuration values.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IDeleteResultHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IDeleteResultHandler.html",
-          "hash": "6qG11JYfmOTYlvdxmubwpGiKdtbroTlyrDPGdZ8mRVA="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IDeleteResultHandler.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IDeleteResultHandler",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IDeleteResultHandler.yml\" sourcestartlinenumber=\"1\">Results handler for the delete file operation.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IDeleteSupport.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IDeleteSupport.html",
-          "hash": "bb0xR4RcMXiC7BNsL9nZYBHZMAJ9Ef8A5f8KnPL1UAU="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IDeleteSupport.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IDeleteSupport",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IDeleteSupport.yml\" sourcestartlinenumber=\"1\">Delete action support.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFailure.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFailure.html",
-          "hash": "79wGpbDZzzsWeKTpHlDeu+7g7EvavCe/0IrMqbTmAkE="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFailure.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IFailure",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFailureDetails.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFailureDetails.html",
-          "hash": "o4O6UGaDqv8iGilu9fqD0U52s/LHg/bx39RwqOd0mzs="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFailureDetails.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IFailureDetails",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IFailureDetails.yml\" sourcestartlinenumber=\"1\">Represents details of a failure.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.html",
-          "hash": "a3kwc9FagNrCl8DF1BvNQQ/ljigGu0n4wB9UUv8unn4="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IFailureRegistration",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IFailureRegistration.yml\" sourcestartlinenumber=\"1\">Represents a results handler that can register a failure.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.html",
-          "hash": "DAQYQ6S2AE5liP+REhQYKo7qv8I48V/FabGMrS/sF3M="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IFileDataResultsHandler.yml\" sourcestartlinenumber=\"1\">Provides methods to queue the file data retrieval results.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFileListResultsHandler.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFileListResultsHandler.html",
-          "hash": "oNpG8EhMdHXl45w4rdSf2Tmm5fbc/Bxv5xmSmiXehtI="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFileListResultsHandler.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IFileListResultsHandler",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IFileListResultsHandler.yml\" sourcestartlinenumber=\"1\">Results handler for the file list retrieval operation.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFileMetadata.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFileMetadata.html",
-          "hash": "pFMn/fVpeQiJbspNdUatDpwVJln26QqhIjOohS8tndE="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IFileMetadata.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IFileMetadata",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IFileMetadata.yml\" sourcestartlinenumber=\"1\">File metadata.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.html",
-          "hash": "oDqSezzQttcerarIJ7Y5o+hRDOm/TO2aThUhD8XsAAE="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IOptionsProvider",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.yml\" sourcestartlinenumber=\"1\">The options provider.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IProcessingEngine.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IProcessingEngine.html",
-          "hash": "HpPiwkA+UMh4kOGAbECc2nT16QFpKmaMFFay1mCQml0="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IProcessingEngine.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IProcessingEngine",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IProcessingEngine.yml\" sourcestartlinenumber=\"1\">Adapter processing engine responsible for the handling and execution of the repository tasks.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IProcessingEngineFactory.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IProcessingEngineFactory.html",
-          "hash": "UHHxOLAF6ahpUuVms0HTHlapDrrYEp6TG0YEAt2mmrw="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IProcessingEngineFactory.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IProcessingEngineFactory",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IProcessingEngineFactory.yml\" sourcestartlinenumber=\"1\">Responsible for creation of <xref href=\"OpenText.Fusion.AdapterSdk.Api.IProcessingEngine\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryAdapter.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryAdapter.html",
-          "hash": "ET97gEzfNP9JLZTGj+KYldyK4IEDSbTQ1/iFzsGe980="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryAdapter.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IRepositoryAdapter",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IRepositoryAdapter.yml\" sourcestartlinenumber=\"1\">The adapter interface.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.html",
-          "hash": "2FRwy3rKRZj3kuHsrMo3+X8cHBGDehwfwrYpcp32oQE="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IRepositoryFile",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IRepositoryFile.yml\" sourcestartlinenumber=\"1\">A file in a repository.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryPartitionFile.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryPartitionFile.html",
-          "hash": "L1xGZKIThUkbcQid0scWclN+GlbTmevKjKYNbNoUHCw="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryPartitionFile.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IRepositoryPartitionFile",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IRepositoryPartitionFile.yml\" sourcestartlinenumber=\"1\">Repository File with Partition Hint.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties.html",
-          "hash": "ylSZwDU9dp0pFkQvkCZu1Q3MuVi2R0UXixMFI5bMDgI="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IRepositoryProperties.yml\" sourcestartlinenumber=\"1\">Represents repository information passed from Fusion.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html",
-          "hash": "vuV56zV5ua8tJB09nq8rHbPL3v0ijTr99dv88Knkv8Y="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IStoreFile",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IStoreFile.yml\" sourcestartlinenumber=\"1\">Details of a file to be stored in the repository.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupport.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupport.html",
-          "hash": "glRlbHRSRoPyFC6IlyZcFzHvA3ExCfuvundTI8LdAyM="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupport.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IStoreSupport",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IStoreSupport.yml\" sourcestartlinenumber=\"1\">Store action support.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.html",
-          "hash": "cyM3ZIIwfQn2G8NJsR/4IDUnEoLiPVRaqK1bVEqI9F4="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportProcessor.yml\" sourcestartlinenumber=\"1\">A processor that can store files in the repository.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.html",
-          "hash": "WFPXct7Wa774dtaLjb38MO1smw/k+F5Xjn9zfXBNFjc="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IStoreSupportRequest.yml\" sourcestartlinenumber=\"1\">Provides information required to store a file in the repository.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryConfigurationNames.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryConfigurationNames.html",
-          "hash": "sVWkgPdUWcAGPOJJBf9KuSROaPVomT2hwWmQMcObZRA="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryConfigurationNames.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.RepositoryConfigurationNames",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.RepositoryConfigurationNames.yml\" sourcestartlinenumber=\"1\">Predefined RepositoryConfiguration options names.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryFile.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryFile.html",
-          "hash": "/EtVT4m3uCT3nvBld7xn5Mqxo95ys85SjTd99m91gcw="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryFile.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.RepositoryFile",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.RepositoryFile.yml\" sourcestartlinenumber=\"1\">Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryFilesRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryFilesRequest.html",
-          "hash": "H8kLI2baDcHlXaVCpOjvQql96daYD+YvpaBGcPJvxa0="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryFilesRequest.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.RepositoryFilesRequest",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.RepositoryFilesRequest.yml\" sourcestartlinenumber=\"1\">Provides information required to run the RetrieveFilesData command.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.html",
-          "hash": "uZhsSyORltuolpPGlMRFgtEqXZmbwZeLORuOnDE3uHY="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.RepositoryOptionNames.yml\" sourcestartlinenumber=\"1\">Predefined names of the repository options.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryPartitionFile.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryPartitionFile.html",
-          "hash": "Psd+dWyKJoSzhIUWrfbIMESDrInmPUqcvlndX2zAJTw="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositoryPartitionFile.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.RepositoryPartitionFile",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.RepositoryPartitionFile.yml\" sourcestartlinenumber=\"1\">Repository File with Partition Hint.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.html",
-          "hash": "X96qrBm8Y3m+PCajZPJVmXm3k3vhRih26z+D+H0/WvQ="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.RepositorySettingDefinition.yml\" sourcestartlinenumber=\"1\">Definition of a repository setting in Fusion Custom Adapter.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.html",
-          "hash": "uIeiNawBkCfIIs1S1IjhR0e6IS8CNZedjlov7YadXqs="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.RetrieveFileListRequest.yml\" sourcestartlinenumber=\"1\">Provides information required to run RetrieveFileList command.</p>\n"
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.yml",
       "output": {
         ".html": {
-          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.html",
-          "hash": "4mkchXL5hEFNJLahhceUWvLRbBrgshA57pkTlCJ5ELI="
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.html"
         }
       },
-      "is_incremental": true,
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api",
+      "Summary": null
     },
     {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
-          "relative_path": "api/index.html",
-          "hash": "4WMlHqo9IWTtnAagqbLvNJzqVciwitKKeOklXnie9tM="
+          "relative_path": "api/index.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -699,11 +735,12 @@
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "Op1KgHzM6IhWOYlFwUXDrZmk2Xrwbqg420RiQssa2/A="
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -714,22 +751,16 @@
           "relative_path": "favicon.ico"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html",
-          "hash": "TXdkAf3Sp2pMfIacrIivmjN3+IfjUYoaDrXCdHdLS4c="
+          "relative_path": "index.html"
         }
       },
-      "is_incremental": true,
       "version": ""
     },
     {
@@ -740,7 +771,6 @@
           "relative_path": "logo.svg"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -751,7 +781,6 @@
           "relative_path": "styles/main.css"
         }
       },
-      "is_incremental": false,
       "version": ""
     },
     {
@@ -759,63 +788,15 @@
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "toc.html",
-          "hash": "s+UecGKJLe11K3w4+MJjx6QoiqktkO8teeQG06lk8L0="
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
-      "is_incremental": false,
       "version": ""
     }
   ],
-  "incremental_info": [
-    {
-      "status": {
-        "can_incremental": true,
-        "incrementalPhase": "build",
-        "total_file_count": 0,
-        "skipped_file_count": 0
-      },
-      "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 11,
-          "skipped_file_count": 11
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 37,
-          "skipped_file_count": 37
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
-        }
-      }
-    },
-    {
-      "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
-        "incrementalPhase": "postProcessing",
-        "total_file_count": 0,
-        "skipped_file_count": 0
-      },
-      "processors": {}
-    }
-  ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"
