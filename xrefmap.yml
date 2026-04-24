@@ -521,18 +521,56 @@ references:
   isSpec: "True"
   fullName: OpenText.Fusion.AdapterSdk.Api.IAdapterDescriptor.SettingDefinitions
   nameWithType: IAdapterDescriptor.SettingDefinitions
+- uid: OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler
+  name: IChangeLogResultsHandler
+  href: api/OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.html
+  commentId: T:OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler
+  fullName: OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler
+  nameWithType: IChangeLogResultsHandler
+- uid: OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddDeletedItemAsync(System.String,System.Threading.CancellationToken)
+  name: AddDeletedItemAsync(string, CancellationToken)
+  href: api/OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.html#OpenText_Fusion_AdapterSdk_Api_IChangeLogResultsHandler_AddDeletedItemAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddDeletedItemAsync(System.String,System.Threading.CancellationToken)
+  name.vb: AddDeletedItemAsync(String, CancellationToken)
+  fullName: OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddDeletedItemAsync(string, System.Threading.CancellationToken)
+  fullName.vb: OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddDeletedItemAsync(String, System.Threading.CancellationToken)
+  nameWithType: IChangeLogResultsHandler.AddDeletedItemAsync(string, CancellationToken)
+  nameWithType.vb: IChangeLogResultsHandler.AddDeletedItemAsync(String, CancellationToken)
+- uid: OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddDeletedItemAsync*
+  name: AddDeletedItemAsync
+  href: api/OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.html#OpenText_Fusion_AdapterSdk_Api_IChangeLogResultsHandler_AddDeletedItemAsync_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddDeletedItemAsync
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddDeletedItemAsync
+  nameWithType: IChangeLogResultsHandler.AddDeletedItemAsync
+- uid: OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddLostItemAsync(System.String,System.Threading.CancellationToken)
+  name: AddLostItemAsync(string, CancellationToken)
+  href: api/OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.html#OpenText_Fusion_AdapterSdk_Api_IChangeLogResultsHandler_AddLostItemAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddLostItemAsync(System.String,System.Threading.CancellationToken)
+  name.vb: AddLostItemAsync(String, CancellationToken)
+  fullName: OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddLostItemAsync(string, System.Threading.CancellationToken)
+  fullName.vb: OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddLostItemAsync(String, System.Threading.CancellationToken)
+  nameWithType: IChangeLogResultsHandler.AddLostItemAsync(string, CancellationToken)
+  nameWithType.vb: IChangeLogResultsHandler.AddLostItemAsync(String, CancellationToken)
+- uid: OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddLostItemAsync*
+  name: AddLostItemAsync
+  href: api/OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.html#OpenText_Fusion_AdapterSdk_Api_IChangeLogResultsHandler_AddLostItemAsync_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddLostItemAsync
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.AddLostItemAsync
+  nameWithType: IChangeLogResultsHandler.AddLostItemAsync
 - uid: OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport
   name: IChangeLogSupport
   href: api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.html
   commentId: T:OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport
   fullName: OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport
   nameWithType: IChangeLogSupport
-- uid: OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.RetrieveChangeLogAsync(OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest,OpenText.Fusion.AdapterSdk.Api.IFileListResultsHandler,System.Threading.CancellationToken)
-  name: RetrieveChangeLogAsync(ChangeLogRequest, IFileListResultsHandler, CancellationToken)
-  href: api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.html#OpenText_Fusion_AdapterSdk_Api_IChangeLogSupport_RetrieveChangeLogAsync_OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_OpenText_Fusion_AdapterSdk_Api_IFileListResultsHandler_System_Threading_CancellationToken_
-  commentId: M:OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.RetrieveChangeLogAsync(OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest,OpenText.Fusion.AdapterSdk.Api.IFileListResultsHandler,System.Threading.CancellationToken)
-  fullName: OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.RetrieveChangeLogAsync(OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest, OpenText.Fusion.AdapterSdk.Api.IFileListResultsHandler, System.Threading.CancellationToken)
-  nameWithType: IChangeLogSupport.RetrieveChangeLogAsync(ChangeLogRequest, IFileListResultsHandler, CancellationToken)
+- uid: OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.RetrieveChangeLogAsync(OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest,OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler,System.Threading.CancellationToken)
+  name: RetrieveChangeLogAsync(ChangeLogRequest, IChangeLogResultsHandler, CancellationToken)
+  href: api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.html#OpenText_Fusion_AdapterSdk_Api_IChangeLogSupport_RetrieveChangeLogAsync_OpenText_Fusion_AdapterSdk_Api_ChangeLogRequest_OpenText_Fusion_AdapterSdk_Api_IChangeLogResultsHandler_System_Threading_CancellationToken_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.RetrieveChangeLogAsync(OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest,OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler,System.Threading.CancellationToken)
+  fullName: OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.RetrieveChangeLogAsync(OpenText.Fusion.AdapterSdk.Api.ChangeLogRequest, OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler, System.Threading.CancellationToken)
+  nameWithType: IChangeLogSupport.RetrieveChangeLogAsync(ChangeLogRequest, IChangeLogResultsHandler, CancellationToken)
 - uid: OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.RetrieveChangeLogAsync*
   name: RetrieveChangeLogAsync
   href: api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.html#OpenText_Fusion_AdapterSdk_Api_IChangeLogSupport_RetrieveChangeLogAsync_

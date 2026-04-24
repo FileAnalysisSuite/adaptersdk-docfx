@@ -316,6 +316,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler",
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IChangeLogResultsHandler.yml\" sourcestartlinenumber=\"1\">Results handler for the change log retrieval operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/OpenText.Fusion.AdapterSdk.Api.IChangeLogSupport.yml",
       "output": {
         ".html": {
@@ -734,11 +748,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""
@@ -787,11 +801,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""
