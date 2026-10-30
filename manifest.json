@@ -480,7 +480,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "OpenText.Fusion.AdapterSdk.Api.IOptionsProvider",
-      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.yml\" sourcestartlinenumber=\"1\">The options provider.</p>\n"
+      "Summary": "<p sourcefile=\"api/OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.yml\" sourcestartlinenumber=\"1\">Options provider.</p>\n"
     },
     {
       "type": "ManagedReference",

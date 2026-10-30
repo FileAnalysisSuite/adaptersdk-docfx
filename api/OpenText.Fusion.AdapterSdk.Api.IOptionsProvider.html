@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Interface IOptionsProvider ">
     
-    <meta name="description" content="The options provider.">
+    <meta name="description" content="Options provider.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -71,7 +71,7 @@
 
 
   <h1 id="OpenText_Fusion_AdapterSdk_Api_IOptionsProvider" data-uid="OpenText.Fusion.AdapterSdk.Api.IOptionsProvider" class="text-break">Interface IOptionsProvider</h1>
-  <div class="markdown level0 summary"><p>The options provider.</p>
+  <div class="markdown level0 summary"><p>Options provider.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="OpenText.html">OpenText</a>.<a class="xref" href="OpenText.Fusion.html">Fusion</a>.<a class="xref" href="OpenText.Fusion.AdapterSdk.html">AdapterSdk</a>.<a class="xref" href="OpenText.Fusion.AdapterSdk.Api.html">Api</a></h6>
@@ -81,7 +81,7 @@
     <pre><code class="lang-csharp hljs">public interface IOptionsProvider</code></pre>
   </div>
   <h5 id="OpenText_Fusion_AdapterSdk_Api_IOptionsProvider_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>Allows to retrieve settings associated with the source and repository.</p>
+  <div class="markdown level0 remarks"><p>Used to retrieve settings associated with the source and repository.</p>
 </div>
   <h3 id="properties">Properties
 </h3>
@@ -117,7 +117,7 @@
 
   <a id="OpenText_Fusion_AdapterSdk_Api_IOptionsProvider_GetOption_" data-uid="OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.GetOption*"></a>
   <h4 id="OpenText_Fusion_AdapterSdk_Api_IOptionsProvider_GetOption_System_String_" data-uid="OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.GetOption(System.String)">GetOption(string)</h4>
-  <div class="markdown level1 summary"><p>Retrieves a value of an option.</p>
+  <div class="markdown level1 summary"><p>Retrieves the value of an option.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -159,6 +159,54 @@
     </tbody>
   </table>
   <h5 id="OpenText_Fusion_AdapterSdk_Api_IOptionsProvider_GetOption_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the option does not exist, <code>null</code> will be returned.</p>
+</div>
+
+
+  <a id="OpenText_Fusion_AdapterSdk_Api_IOptionsProvider_GetOptionSecure_" data-uid="OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.GetOptionSecure*"></a>
+  <h4 id="OpenText_Fusion_AdapterSdk_Api_IOptionsProvider_GetOptionSecure_System_String_" data-uid="OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.GetOptionSecure(System.String)">GetOptionSecure(string)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the value of an option as a secure string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SecureString? GetOptionSecure(string optionName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">optionName</span></td>
+        <td><p>The option name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.securestring">SecureString</a></td>
+        <td><p>Value of an option as a secure string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="OpenText_Fusion_AdapterSdk_Api_IOptionsProvider_GetOptionSecure_System_String__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>If the option does not exist, <code>null</code> will be returned.</p>
 </div>
 

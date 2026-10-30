@@ -988,6 +988,22 @@ references:
   isSpec: "True"
   fullName: OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.GetOption
   nameWithType: IOptionsProvider.GetOption
+- uid: OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.GetOptionSecure(System.String)
+  name: GetOptionSecure(string)
+  href: api/OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.html#OpenText_Fusion_AdapterSdk_Api_IOptionsProvider_GetOptionSecure_System_String_
+  commentId: M:OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.GetOptionSecure(System.String)
+  name.vb: GetOptionSecure(String)
+  fullName: OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.GetOptionSecure(string)
+  fullName.vb: OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.GetOptionSecure(String)
+  nameWithType: IOptionsProvider.GetOptionSecure(string)
+  nameWithType.vb: IOptionsProvider.GetOptionSecure(String)
+- uid: OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.GetOptionSecure*
+  name: GetOptionSecure
+  href: api/OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.html#OpenText_Fusion_AdapterSdk_Api_IOptionsProvider_GetOptionSecure_
+  commentId: Overload:OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.GetOptionSecure
+  isSpec: "True"
+  fullName: OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.GetOptionSecure
+  nameWithType: IOptionsProvider.GetOptionSecure
 - uid: OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.OptionNames
   name: OptionNames
   href: api/OpenText.Fusion.AdapterSdk.Api.IOptionsProvider.html#OpenText_Fusion_AdapterSdk_Api_IOptionsProvider_OptionNames
